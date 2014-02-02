@@ -1,0 +1,243 @@
+@-moz-document url("about:addons")   {
+
+#div-gia-na-koroidepsw-to-kate {border: none;}
+
+#categories {
+border:none !important;
+background-image: none !important;
+box-shadow:none !important;
+background-color: transparent !important;
+-moz-margin-end:3px !important;
+-moz-margin-start:0 !important;
+margin-top:0 !important;
+}
+
+.category:not([selected])  {
+color:black !important;
+}
+
+#view-port,#addon-list {
+background-image: none !important;
+margin:0 !important;
+background-color: transparent !important;
+box-shadow:none !important;
+color:#135E8D !important;
+}
+
+#view-port {
+background:none !important;
+box-shadow:none !important;
+border:none !important;
+-moz-border-image: url("chrome://browser/skin/subskins/bg2.png") 12 12 12 12  stretch stretch !important;
+border-width: 5px !important;
+padding:5px !important;
+-moz-margin-end:6px !important;
+margin-top:6px !important;
+margin-bottom:6px !important;
+}
+
+#addons-page {
+background-color:#eee !important;
+background-image:
+url("chrome://browser/skin/subskins/left_kde2.png"),
+url("chrome://mozapps/skin/extensions/circles.png"),
+url("chrome://browser/skin/subskins/bg-sky.png") !important;
+background-position:bottom left,top left,top left !important;
+background-repeat:no-repeat,no-repeat,repeat-x !important;
+}
+
+#header  {
+margin-bottom:7px !important;
+}
+
+button,
+.category:not([selected]):not([disabled]) {
+background: -moz-linear-gradient(top,  rgba(242, 242, 242,.4),rgba(193, 194, 194,.4)) !important;
+border:1px solid rgba(143, 151, 158,.8) !important;
+border-radius: 3px !important;
+-moz-appearance: none !important;
+box-shadow:0px 1px 3px 1px rgba(0,0,0,.2) !important;
+color:rgb(20,20,20) !important;
+background-clip: border-box !important;
+opacity:.8 !important;
+}
+
+.category:not([selected]):not([disabled]) {
+margin: 0.4em 1em 0.4em 0.5em !important;
+padding: 1px .5em 1px .5em !important;
+}
+
+button:hover,
+.category:not([selected]):not([disabled]):hover {
+background: -moz-linear-gradient(top,  rgba(242, 242, 242,.1),rgba(193, 194, 194,.4)) !important;
+border:1px solid rgba(143, 151, 158,.8) !important;
+border-radius: 3px !important;
+box-shadow:0px 1px 3px 1px rgba(43, 72, 109,.5) !important;
+color:rgb(20,20,20) !important;
+background-clip: border-box !important;
+opacity:.8 !important;
+}
+
+button:hover:active,
+.category[selected]:not([disabled]) {
+box-shadow:inset 0px 1px 3px 1px rgba(0,0,0,.2) !important;
+margin: 0.4em 1em 0.4em 0.5em !important;
+border-radius: 3px !important;
+padding: 4px .5em 4px .5em !important;
+color:rgb(20,20,20) !important;
+background: -moz-linear-gradient(top,  rgba(232, 247, 254,.4),rgba(242, 251, 254,.4)) !important;
+border:1px solid rgba(0, 0, 0,.2) !important;
+}
+
+button,button:hover,button:hover:active {
+margin: 0.4em 1em !important;
+padding: 3px 1em 3px 1em !important;
+}
+
+thumb[orient="vertical"] {
+background-image: -moz-linear-gradient(top,  green,green) !important;
+border:5px solid rgb(143, 151, 158) !important;
+border-radius: 3px !important;
+-moz-appearance: none !important;
+box-shadow:0px 1px 3px 1px rgba(0,0,0,.2) !important;
+color:rgb(20,20,20) !important;
+background-clip: border-box !important;
+opacity:.8 !important;
+}
+
+richlistitem+richlistitem {
+border-top-width: 1px !important;
+-moz-border-image: url("chrome://browser/skin/subskins/category1.png") 1 1 0 0  stretch stretch !important;
+}
+
+richlistitem {
+color:rgb(20,20,20) !important;
+}
+
+richlistitem:hover {
+background:
+-moz-linear-gradient(top,  rgba(242, 242, 242,.1),rgba(193, 194, 194,.4)) !important;
+border:1px solid rgba(143, 151, 158,.8) !important;
+border-radius: 3px !important;
+box-shadow:0px 1px 3px 1px rgba(0,0,0,.2) !important;
+color:rgb(20,20,20) !important;
+background-clip: border-box !important;
+}
+
+#addons-page richlistitem[selected="true"] {
+box-shadow:inset 0px 1px 4px 2px rgba(0,0,0,.1) !important;
+border-radius: 3px !important;
+color:rgb(20,20,20) !important;
+background: -moz-linear-gradient(top,  rgba(232, 247, 254,.4),rgba(242, 251, 254,.4)) !important;
+border:1px solid rgba(0, 0, 0,.2) !important;
+}
+
+
+#detail-name {
+margin-bottom:5px !important;
+}
+
+#detail-icon  {
+margin-top:5px !important;
+}
+
+.detail-view-container  {
+margin:0px 8px !important;
+}
+
+#back-btn,#forward-btn {
+padding:3px !important;
+}
+
+
+#detail-contributions {
+background:none !important;
+border:none !important;
+-moz-border-image: url("chrome://browser/skin/subskins/bg2.png") 12 12 12 12  stretch stretch !important;
+border-width: 5px !important;
+padding:8px !important;
+margin-top:10px !important;
+margin-bottom:10px !important;
+}
+
+.detail-row,.detail-row-complex {
+margin-top:5px !important;
+}
+
+#detail-reviews {
+padding-top:2px !important;
+padding-left:6px !important;
+}
+
+.detail-row-value.text-link,.detail-row-value {
+padding-top:2px !important;
+}
+
+#addon-list .details.button-link {
+-moz-appearance: none !important;
+margin: 0 3px !important;
+border:none !important;
+box-shadow:none !important;
+background-image: none !important;
+text-decoration: none !important;
+color: #135E8D !important;
+}
+
+
+scrollbar[orient="vertical"],
+scrollbar[orient="horizontal"] {
+background-image:none !important;
+background-color:transparent !important; 
+border-radius: 0px !important;
+}
+slider[orient="vertical"] {
+border:none !important;
+border-radius: 2px !important;
+margin-bottom:3px;
+margin-right:1px;
+margin-left:1px;
+background-color:transparent !important;
+box-shadow:inset 0px 1px 1px 1px rgba(0,0,0,.2) !important;
+}
+slider[orient="horizontal"] {
+border:none !important;
+border-radius: 2px !important;
+background-color:transparent !important;
+box-shadow:inset 0px 0px 1px 1px rgba(0,0,0,.2) !important;
+}
+thumb[orient="vertical"],
+thumb[orient="horizontal"] {
+background-image: -moz-linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8)) !important;
+border:1px solid rgb(143, 151, 158) !important;
+border-radius: 2px !important;
+box-shadow:none !important;
+color:rgb(20,20,20) !important;
+background-clip: border-box !important;
+opacity:.5 !important;
+}
+thumb[orient="vertical"]:hover,
+thumb[orient="vertical"]:hover:active,
+thumb[orient="horizontal"]:hover,
+thumb[orient="horizontal"]:hover:active {
+opacity:.9 !important;
+}
+
+scrollcorner {background-color:transparent !important;}
+scrollbar[orient="horizontal"] > scrollbarbutton[type="increment"] {
+background-image: url("chrome://global/skin/scrollbar/arrow-right.png") !important;}
+scrollbar[orient="horizontal"] > scrollbarbutton[type="increment"]:hover {
+background-image: url("chrome://global/skin/scrollbar/arrow-right_hover.png") !important;}
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"] {
+background-image: url("chrome://global/skin/scrollbar/vertical/arrow-down.png") !important;}
+scrollbar[orient="vertical"] > scrollbarbutton[type="increment"]:hover {
+background-image: url("chrome://global/skin/scrollbar/vertical/arrow-down_hover.png") !important;}
+scrollbar[orient="horizontal"] > scrollbarbutton[type="decrement"] {
+background-image: url("chrome://global/skin/scrollbar/arrow-left.png") !important;}
+scrollbar[orient="horizontal"] > scrollbarbutton[type="decrement"]:hover {
+background-image: url("chrome://global/skin/scrollbar/arrow-left_hover.png") !important;}
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"] {
+background-image: url("chrome://global/skin/scrollbar/vertical/arrow-up.png") !important;}
+scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"]:hover {
+background-image: url("chrome://global/skin/scrollbar/vertical/arrow-up_hover.png") !important;}
+
+}

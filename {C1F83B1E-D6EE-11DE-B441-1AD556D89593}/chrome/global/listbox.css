@@ -1,0 +1,210 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ===== listbox.css =======================================================
+  == Styles used by XUL listbox-related elements.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: listbox ::::: */
+
+listbox {
+-moz-appearance: none !important;
+margin: 2px 4px;
+background-color:#ffffff;
+color: #000000;
+border:none;
+box-shadow:inset 0px 1px 1px 0px rgba(0,0,0,.15),
+0px 0px 0px 1px rgba(0,0,0,.2);
+-moz-border-radius:3px;
+}
+
+listbox:hover {
+box-shadow:inset 0px 0px 2px 1px rgba(110, 214, 255,.7),
+0px 0px 0px 1px rgba(110, 214, 255,.9);
+-moz-transition-duration: 0.3s;
+}
+
+listbox:focus {
+-moz-box-shadow:inset 0px 0px 2px 1px rgba(58, 167, 221,.7),
+0 0 0px 1px rgba(58, 167, 221,.9);
+-moz-transition-duration: 0.3s;
+}
+
+listbox[disabled="true"] {
+  color: GrayText;
+}
+
+/* ::::: listitem ::::: */
+
+listitem {
+  border: 1px solid transparent;
+}
+
+listitem:hover {
+background: -moz-linear-gradient(top, #E3F4FE, #D9EEFA);
+border: 1px solid #CAE7F8;
+box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,.4);
+border-radius: 3px;
+}
+
+
+listbox:focus > listitem[selected="true"][current="true"] {
+  border: 1px solid transparent;
+}
+
+listitem[selected="true"] {
+background: -moz-linear-gradient(top, #76CCFE, #44ACE8);
+border:1px solid #43ACE8;
+box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,.4);
+border-radius: 3px;
+color:#ffffff;
+}
+
+listbox:focus > listitem[selected="true"] {
+background: -moz-linear-gradient(top, #76CCFE, #44ACE8);
+border:1px solid #43ACE8;
+box-shadow:inset 0px 0px 0px 1px rgba(255,255,255,.4);
+border-radius: 3px;
+color:#ffffff;
+}
+
+/* ::::: listheader ::::: */
+
+listheader { 
+  -moz-appearance: none;
+  -moz-box-align: center;
+border: none !important;
+/*-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;*/
+/*-moz-border-top-colors:#969595 #c1c0bf !important;
+-moz-border-bottom-colors:#d6d5d4 #e0dfde !important;
+-moz-border-left-colors:#bbbab9 #dcdbda !important;
+-moz-border-right-colors:#bcbbba #dcdbda !important;*/
+  background-color: #DADCE4;
+  color: #000000;
+  padding: 0 4px;
+}
+
+listheader[sortable="true"]:hover:active {
+border: 2px solid;
+border-radius: 5px;
+-moz-border-top-colors:#3DA6DA #8AB6C9;
+-moz-border-bottom-colors:#3FA8DB #92BCCF;
+-moz-border-left-colors:#40A7DB #94BED1;
+-moz-border-right-colors:#3FA8DB #90BACD;
+padding: 1px 4px 0 5px;
+}
+
+.listheader-icon {
+  -moz-margin-end: 2px;
+}
+
+.listheader-label {
+  margin: 0px;
+}
+
+/* ..... sort direction icon ..... */
+
+.listheader-sortdirection {
+  list-style-image: none;
+}
+
+.listheader-sortdirection[sortDirection="ascending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-asc.png");
+}
+
+.listheader-sortdirection[sortDirection="ascending"]:-moz-system-metric(windows-classic) {
+  list-style-image: url("chrome://global/skin/tree/sort-asc-classic.png");
+}
+
+.listheader-sortdirection[sortDirection="descending"] {
+  list-style-image: url("chrome://global/skin/tree/sort-dsc.png");
+}
+
+.listheader-sortdirection[sortDirection="descending"]:-moz-system-metric(windows-classic) {
+  list-style-image: url("chrome://global/skin/tree/sort-dsc-classic.png");
+}
+
+/* ::::: listcell ::::: */
+
+.listcell-label {
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  -moz-padding-start: 4px;
+  -moz-padding-end: 0px;
+  white-space: nowrap;
+}
+
+.listcell-icon {
+  -moz-margin-end: 2px;
+}
+
+.listcell-label[disabled="true"] {
+  color: GrayText;
+}
+
+/* ::::: listcell checkbox ::::: */
+
+.listcell-check {
+width:16px;
+height:16px;
+-moz-box-align: center;
+margin: 0px 2px;
+list-style-image: none;
+box-shadow:inset 0 0 0px 1px rgba(240,237,233,.8) , 0 1px 2px 0px rgba(0,0,0,.6);
+background: -moz-linear-gradient(0% 75% 90deg,  rgba(211,208,205,.9),rgba(228,224,221,.9) );
+border-radius: 3px;
+}
+
+.listcell-check[checked="true"] {
+  list-style-image: url("chrome://global/skin/checkbox/checkbox-tik.png");
+}
+
+.listcell-check[disabled="true"] {
+list-style-image: none;
+opacity: 0.4;
+}
+
+.listcell-check[disabled="true"][checked="true"] {
+  list-style-image: url("chrome://global/skin/checkbox/checkbox-tik.png");
+}

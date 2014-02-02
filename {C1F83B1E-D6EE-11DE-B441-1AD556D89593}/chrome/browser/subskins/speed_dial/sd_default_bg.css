@@ -1,0 +1,6 @@
+ #speeddialTabbox-panelContainer, #speeddialWindow * tabpanel {
+background-color:white !important;
+background-image:url('chrome://mozapps/skin/extensions/circles.png'),url('chrome://browser/skin/subskins/bg-header.png'),url('chrome://mozapps/skin/extensions/tile.gif') !important;
+background-position:top left,bottom left,top left !important;
+background-repeat:no-repeat,repeat-x,repeat-x !important; 
+}

@@ -1,0 +1,112 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+.speeddial-bottom-middle,.speeddial-middle-left,
+.speeddial-middle-right,.speeddial-bottom-middle,
+.speeddial-bottom-left,.speeddial-bottom-right{
+display: none;}
+
+.speeddial-top-left {display: none;}
+.speeddial-top-right {display: none;}
+
+.thumbnail-title {
+text-shadow: 1px 1px 1px #fff;
+}
+
+.speeddial-top-middle {
+background: none !important;
+color:#000 !important;
+padding:0.2em 0.4em 0.2em 0.4em !important;
+margin:0 0 0.3em 0 !important;
+border: none !important;
+-moz-border-radius:3px !important;
+-moz-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 12px, inset rgba(0, 0, 0, .2) 0 1px 2px, rgba(255, 255, 255, 0.2) 0 1px !important; 
+}
+
+.speeddialThumb {
+padding:0.25em !important;
+-moz-border-radius: 4px !important;
+-moz-box-shadow:0 1px 2px rgba(0,0,0,.5) !important;
+border-top: 1px solid rgb(245,238,234) !important;
+border-bottom: 1px solid rgb(245,238,234) !important;
+border-left: 1px solid rgb(253,246,242) !important;
+border-right: 1px solid rgb(253,246,242) !important;
+background: -moz-linear-gradient(top,  rgb(232,226,222),rgb(215,209,206) ) !important;
+opacity:.94 !important;
+}
+
+.speeddialThumb:hover {
+-moz-box-shadow: 0 0 2px 1px rgb(110,214,255) !important;
+background: -moz-linear-gradient(top,  rgb(232,226,222),rgb(215,209,206) ) !important;
+}
+
+.speeddial-container {
+-moz-border-radius: 4px !important;
+border: 1px solid rgba(0,0,0,.2) !important;
+padding:0em !important;
+margin:0em !important;
+}
+
+.speeddialThumb { margin: 1.2em !important;}
+
+.sdTab {
+-moz-appearance: none !important;
+margin: 0.2em 1em !important;
+-moz-border-top-colors: none !important;
+-moz-border-right-colors: none !important;
+-moz-border-left-colors: none !important;
+-moz-border-radius-topleft: 2px;
+-moz-border-radius-topright: 2px;
+-moz-border-radius-bottomright: 1px;
+padding: 0.2em 1em 0.2em 1em !important;
+color: #fef4e9 !important;
+text-shadow: 0 1px 1px rgba(0,0,0,.3) !important;
+-moz-border-radius: 4px !important;
+-moz-box-shadow:0 1px 2px rgba(0,0,0,.5) !important;
+border-top: 1px solid rgb(245,238,234) !important;
+border-bottom: 1px solid rgb(245,238,234) !important;
+border-left: 1px solid rgb(253,246,242) !important;
+border-right: 1px solid rgb(253,246,242) !important;
+background: -moz-linear-gradient(top,  #faa51a,  #f47a20) !important;
+}
+
+.sdTab:hover {
+background: -moz-linear-gradient(top,  #f88e11,  #f06015) !important;
+border-top: 1px solid rgb(245,238,234) !important;
+border-bottom: 1px solid rgb(245,238,234) !important;
+border-left: 1px solid rgb(253,246,242) !important;
+border-right: 1px solid rgb(253,246,242) !important;
+}
+
+.sdTab[selected="true"] {
+-moz-user-focus: normal;
+background: -moz-linear-gradient(top,  #f47a20,  #faa51a) !important;
+-moz-box-shadow:inset 0px 1px rgba(0,0,0,.1) !important;
+border-bottom: 1px solid rgba(0,0,0,.1) !important;
+border-right: 1px solid rgba(0,0,0,.1) !important;
+border-top: 1px solid rgba(0,0,0,.2) !important;
+border-left: 1px solid rgba(0,0,0,.1) !important;
+-moz-border-radius: 4px;
+}
+
+#speeddialTabbox-tabs {
+background-color:#B3D4E3 !important;
+-moz-border-radius:3px !important;
+-moz-box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 12px, inset rgba(0, 0, 0, .2) 0 1px 2px, rgba(255, 255, 255, 0.2) 0 1px !important; 
+margin:.3em .5em !important;
+}
+
+.speeddial-edit-button {
+list-style-image: url("chrome://oxygenkdeoptions/skin/speed_air/edit.png") !important;}
+.speeddial-reload-button {
+list-style-image: url("chrome://oxygenkdeoptions/skin/speed_air/reload.png") !important;}
+.speeddial-newtab-button {
+list-style-image: url("chrome://oxygenkdeoptions/skin/speed_air/newtab.png") !important;}
+
+
+.speeddialThumb[loading="true"] .bookmark-item {
+  list-style-image: url("chrome://global/skin/icons/loading_16.png") !important;
+}
+
+
+/* #speeddialWindow, #speeddialTabbox, #speeddialTabbox-tabs, */
+

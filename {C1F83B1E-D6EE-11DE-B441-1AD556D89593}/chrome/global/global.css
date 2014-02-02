@@ -1,0 +1,494 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+/* ===== global.css =====================================================
+  == Styles that apply everywhere.
+  ======================================================================= */
+
+/* all localizable skin settings shall live here */
+@import url("chrome://global/locale/intl.css");
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ::::: XBL bindings ::::: */
+
+radio {
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#radio");
+}
+
+menulist > menupopup,
+.menulist-menupopup {
+  -moz-binding: url("chrome://global/content/bindings/popup.xml#popup-scrollbars");
+}
+
+.menulist-compact {
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#menulist-compact");
+}
+
+progressmeter[mode="undetermined"] {
+  -moz-binding: url("chrome://global/content/bindings/progressmeter.xml#progressmeter-undetermined");
+}
+
+
+.menulist-editable-box {
+  background: url("chrome://browser/skin/icons/search-back.png") repeat-x left center;
+  padding: 2px 0px; /* aligns url filed with startcap*/
+  padding-right: 5px; /* extra padding between url text and dropmarker*/
+}
+
+
+
+#bookmarksPanel,
+#history-panel{
+background-color:transparent;
+} 
+#bookmarksPanel >hbox ,
+#history-panel > hbox {
+background-color:transparent;
+}
+
+/* ::::: root elements ::::: */
+
+window,wizard,dialog,prefwindow   {
+-moz-appearance: none;
+background:url('chrome://browser/skin/icons/radial_light.png') top center no-repeat,
+-moz-linear-gradient(top, rgba(224,219,217,0.85) , rgb(199,196,194) 60%) top left repeat-x;
+background-color:rgb(199,196,194);
+font: message-box;
+/* color: #101010; */
+}
+
+page {
+-moz-appearance: none;
+background-color:transparent;
+background-image:none;
+font: message-box;
+}
+
+/* deprecated */
+window.dialog {
+  padding-top: 8px;
+  padding-bottom: 10px;
+  -moz-padding-start: 8px;
+  -moz-padding-end: 10px;
+}
+
+dialog {
+  padding: 10px;
+}
+
+/* ::::: alert icons :::::*/
+
+.message-icon,
+.alert-icon,
+.error-icon,
+.question-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.message-icon {list-style-image: url("chrome://global/skin/icons/Message.png");}
+.alert-icon {list-style-image: url("chrome://global/skin/icons/Warning.png");}
+.error-icon {list-style-image: url("chrome://global/skin/icons/Error.png");}
+.question-icon {list-style-image: url("chrome://global/skin/icons/Question.png");}
+
+/* ::::: iframe ::::: */
+
+iframe {
+  border: none;
+  width: 100px;
+  height: 100px;
+  min-width: 10px;
+  min-height: 10px;
+}
+
+
+#leftBox {
+background:url("chrome://browser/skin/icons/left_kde.png") center no-repeat !important;
+}
+
+/* AboutDialog */
+#clientBox {
+background:url("chrome://browser/skin/icons/left_kde.png") top center no-repeat,
+url("chrome://browser/skin/icons/radial.png") top center no-repeat, 
+            url("chrome://browser/skin/icons/linear.png") top left repeat-x !important;
+background-color:rgb(199, 193, 190) !important;
+}
+
+/* ::::: statusbar ::::: */
+
+statusbar {
+-moz-appearance: none;
+border:none;
+/* background-color: #CDC8C3; */
+min-height: 22px;
+margin: 0px;
+padding: 1px;
+}
+
+statusbarpanel {
+-moz-appearance: none;
+-moz-box-align: center;
+-moz-box-pack: center;
+border:none;
+padding: 0 4px;
+}
+
+.statusbar-resizerpanel {
+-moz-box-align: end;
+-moz-box-pack: end;
+-moz-appearance: none;
+padding: 0px;
+border: none;
+display: none;
+}
+
+.statusbarpanel-iconic,
+.statusbarpanel-iconic-text,
+.statusbarpanel-menu-iconic {
+padding: 0 1px;
+}
+
+/* window:not([active="true"]) menubar > menu { */
+/* color: #000000; */
+/* } */
+
+sidebarheader {
+-moz-appearance: none;
+border-top: 1px solid transparent;
+font-weight:bold;
+color:#000;
+}
+
+sidebarheader > label {
+-moz-padding-start: 2px;
+}
+
+#sidebar-box {
+margin:5px 3px 3px 5px;
+-moz-box-shadow:none;
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://browser/skin/subskins/bg3.png") 12 12 12 12  stretch stretch;
+border-image: url("chrome://browser/skin/subskins/bg3.png") 12 12 12 12  fill stretch stretch;
+
+border-width: 5px;
+-moz-border-radius:5px;
+}
+
+#sidebar-box > sidebarheader{
+list-style-image: url("chrome://browser/skin/places/bookmarksToolbar.png");
+background-color:transparent;
+border:none;
+margin:0 2px 0px 2px;
+}
+
+#sidebar-box > browser {
+border:none !important;
+background-color:transparent !important;
+margin:0 2px 6px 2px;
+padding-right:0px;
+padding-left:0px;
+box-shadow:none;
+border:none !important;
+}
+
+#bookmarks-view,
+#historyTree {
+background-color:transparent;
+border-radius: 0px !important;
+border:none !important;
+box-shadow:none !important;
+}
+
+#bookmarks-view,#historyTree,
+#bookmarksPanel,#history-panel {
+background:none;
+box-shadow:none !important;
+border:none !important;
+}
+
+#bookmarks-view:focus {
+border-bottom:none !important;
+}
+
+.toolbar-focustarget {
+  -moz-user-focus: ignore !important;
+}
+
+/* ::::: miscellaneous formatting ::::: */
+
+.inset {
+  border: 1px solid ThreeDShadow;
+  border-right-color: ThreeDHighlight;
+  border-bottom-color: ThreeDHighlight;
+  margin: 0 5px 5px;
+}
+  
+.outset {
+  border: 1px solid ThreeDShadow;
+  border-left-color: ThreeDHighlight;
+  border-top-color: ThreeDHighlight;
+}
+
+/* separators */
+separator:not([orient="vertical"]) {
+  height: 1.5em;
+}
+separator[orient="vertical"] {
+  width: 1.5em;
+}
+
+separator.thin:not([orient="vertical"]) {
+  height: 0.5em;
+}  
+separator.thin[orient="vertical"] {
+  width: 0.5em;
+}
+
+separator.groove:not([orient="vertical"]) {
+border-bottom-width: 2px;
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://global/skin/menu/separator.png") 0 0 2 2  stretch stretch;
+border-image: url("chrome://global/skin/menu/separator.png") 0 0 2 2  fill stretch stretch;
+height: 0; 
+margin-top: 0.4em;
+margin-bottom: 0.4em;
+}
+separator.groove[orient="vertical"] {
+border-right-width: 2px;
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://global/skin/menu/separator_vertical.png") 0 0 2 2  stretch stretch;
+border-image: url("chrome://global/skin/menu/separator_vertical.png") 0 0 2 2  fill stretch;
+width: 0;
+margin-left: 0.4em;
+margin-right: 0.4em;
+}
+
+.small-margin {
+margin: 1px 2px;
+}
+    
+.plain {
+/* margin: 0 !important; */
+/* border: none; */
+padding: 0;
+}
+
+description,
+label {
+cursor: default;
+margin-top: 1px;
+margin-bottom: 1px;
+-moz-margin-start: 2px;
+-moz-margin-end:2px;
+}
+
+description {
+margin-bottom: 1px;
+}
+
+#offlineAppsListLabel {
+margin-top: 10px !important;
+}
+
+label[disabled="true"] {
+color: GrayText;
+}
+
+label[disabled="true"]:-moz-system-metric(windows-classic) {
+color: ThreeDShadow;
+text-shadow: 1px 1px ThreeDHighlight;
+}
+
+.tooltip-label {
+border-color:#000000;
+color:#000000;
+margin: 0;
+}
+
+.header {
+font-weight: bold;
+}
+
+.monospace {
+font-family: monospace;
+}
+
+.indent {
+-moz-margin-start: 23px;
+}
+
+.box-padded {
+padding: 5px;
+}
+
+.spaced {
+margin: 3px 5px 4px;
+}
+
+.wizard-box {
+padding: 20px 44px 10px;
+}
+
+/*.text-link {
+color: -moz-nativehyperlinktext;
+text-decoration: underline;
+border: 1px solid transparent;
+cursor: pointer;
+}
+  
+.text-link:focus {
+color: red;
+border: 1px dotted -moz-DialogText;
+}
+  
+.text-link:hover:active {
+color: red;
+}
+
+.text-link[visited="true"] {
+color: purple;
+}*/
+
+.text-link,.inline-link {
+color: #0057AE;
+text-decoration: none;
+cursor: pointer;
+-moz-padding-start:1px;
+-moz-padding-end:1px;
+-moz-margin-start:1px;
+-moz-margin-end:1px;
+}
+  
+.text-link:focus,.inline-link:focus,
+.text-link:hover:active,.inline-link:hover:active {
+color: #0057AE;
+outline: 1px dashed #000;
+}
+
+.text-link[visited="true"] {
+color: #644A9B;
+}
+
+/* :::::: autoscroll popup ::::: */
+
+.autoscroller {
+  height: 28px;
+  width: 28px;
+  border: none;
+  margin: -14px;
+  padding: 0;
+  background-image: url("chrome://global/skin/icons/autoscroll.png");
+  background-color: transparent;
+  background-position: right top;
+  -moz-appearance: none;
+}
+
+.autoscroller[scrolldir="NS"] {
+  background-position: right center;
+}
+
+.autoscroller[scrolldir="EW"] {
+  background-position: right bottom;
+}
+
+.tabs-right {
+border: none;
+background-color: transparent !important;
+border-bottom:none !important;
+/* -moz-border-radius-bottomright: 8px; */
+}
+
+.tabbrowser-tabs[multibar] .tabbrowser-arrowscrollbox > .tabs-newtab-button {
+  height: 30px !important;
+  max-height: 30px !important;
+}
+
+
+#updatePanel {
+padding:10px !important;
+}
+
+#TM_ButtonBox {
+padding-top:10px !important;
+padding-bottom:25px !important;
+padding-right:10px !important;
+padding-left:10px !important;}
+
+#styles {
+-moz-appearance: none !important;
+margin-bottom:5px;
+border:none !important;
+}
+
+button[id="warningSettings"] {
+margin-bottom:20px !important;}
+
+ *[anonid="twisty"] {padding-left:10px !important;padding-right:10px !important;} 
+
+#stylish #internal-code {margin-bottom:2px !important;}
+
+.notification-inner.outset { padding:0px;}
+
+#urlbar[fission="fusion"] > #statusbar-icon { 
+background-color: white !important;
+background-image: none !important;
+-moz-border-radius: 0px !important;
+margin:0px 0px -1px 0px !important;
+}
+
+#urlbar[fission="fusion"] > #statusbar-icon > .progress-bar {
+-moz-appearance: none;
+background: -moz-linear-gradient(top, #E3F4FE, #D9EEFA) !important;
+margin:0px 0px -1px 0px !important;
+-moz-border-radius: 0px !important;
+}
+
+#aboutDialog > .dialog-button-box {background-image:none !important;}
+
+statusbarpanel button,
+statusbarpanel button:hover {
+background:none !important;
+border:none !important;
+box-shadow:none !important;
+padding:0 !important;
+margin:0 !important;
+}

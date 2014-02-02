@@ -1,0 +1,5 @@
+#TabsToolbar > #new-tab-button ,
+#TabsToolbar > #wrapper-new-tab-button > #new-tab-button,
+.tabs-newtab-button {
+list-style-image: url('chrome://browser/skin/subskins/new_tab_style/new_tab2.png') !important;
+}

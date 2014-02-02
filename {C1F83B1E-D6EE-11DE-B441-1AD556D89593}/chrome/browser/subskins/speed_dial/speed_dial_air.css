@@ -1,0 +1,220 @@
+/*.speeddial-top-left,
+.speeddial-top-middle,
+.speeddial-top-right,
+.speeddial-middle-left,
+.speeddial-middle-right,
+.speeddial-bottom-left,
+.speeddial-bottom-middle,
+.speeddial-bottom-right
+{width: 22px !important;}
+.speeddial-top-left {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 0, 22, 37, 0) !important;
+background-repeat:no-repeat !important;}
+.speeddial-top-middle {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 0, 44, 37, 22) !important;
+background-repeat:repeat-x !important;
+padding: 16px 0 0 0 !important;}
+.speeddial-top-right {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 0, 66, 37, 44) !important;
+background-repeat:no-repeat !important;}
+.speeddial-middle-left {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 37, 22, 59, 0) !important;
+background-repeat: repeat-y !important;}
+.speeddial-middle-middle {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 37, 44, 59, 22) !important;
+background-repeat: repeat !important;}
+.speeddial-middle-right {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 37, 66, 59, 44) !important;
+background-repeat: repeat !important;}
+.speeddial-bottom-left {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 59, 22, 81, 0) !important;
+background-repeat: no-repeat !important;}
+.speeddial-bottom-middle {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 59, 44, 81, 22) !important;
+background-repeat: repeat-x !important;}
+.speeddial-bottom-right {
+background: -moz-image-rect(url('chrome://oxygenkdeoptions/skin/speed_air/background/bg-air.png'), 59, 66, 81, 44) !important;
+background-repeat: no-repeat !important;}*/
+
+.speeddial-top-left,
+.speeddial-top-middle,
+.speeddial-top-right,
+.speeddial-middle-left,
+.speeddial-middle-right,
+.speeddial-bottom-left,
+.speeddial-bottom-middle,
+.speeddial-bottom-right
+{width: 22px !important;}
+
+.speeddial-bottom-left {
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/bottom-left.png') !important;
+background-position: bottom left !important;
+background-repeat: no-repeat !important;
+}
+
+.speeddial-top-left {
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/top-left.png') !important;
+background-position: top left !important;
+background-repeat: no-repeat !important;
+}
+.speeddial-middle-left {
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/middle-left.png') !important;
+background-position: center left !important;
+background-repeat: repeat-y !important;
+}
+
+.speeddial-bottom-middle {
+height: 22px !important;
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/bottom-middle.png') !important;
+background-position: bottom center !important;
+background-repeat: repeat-x !important;
+}
+
+.speeddial-top-middle {
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/top-middle.png') !important;
+background-position: top center !important;
+background-repeat: repeat-x !important;
+padding: 15px 0 0 0 !important;
+}
+
+.speeddial-bottom-right {
+height: 22px !important;
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/bottom-right.png') !important;
+background-position: bottom right !important;
+background-repeat: no-repeat !important;
+}
+
+.speeddial-top-right {
+width: 22px !important;
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/top-right.png') !important;
+background-position: top right !important;
+background-repeat: no-repeat !important;
+}
+
+.speeddial-middle-right {
+height: 22px !important;
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/middle-right.png') !important;
+background-position: center right !important;
+background-repeat: repeat-y !important;
+}
+
+.speeddial-middle-middle {
+background-image: url('chrome://oxygenkdeoptions/skin/speed_air/background/middle-middle.png') !important;
+background-position: center center !important;
+background-repeat: repeat !important;
+}
+
+.thumbnail-title {
+color:#000 !important;
+text-shadow: 1px 1px 1px #fff !important;
+padding-left:4px !important;
+}
+
+#speeddialWindow * .bookmark-item,
+.speeddial-open-button,
+.speeddial-newtab-button,
+.speeddial-backgroundtab-button,
+.speeddial-newwindow-button,
+.speeddial-reload-button,
+.speeddial-edit-button,
+.speeddial-close-button
+{margin-top:0px !important;}
+
+.speeddial-edit-button {
+list-style-image: url("chrome://oxygenkdeoptions/skin/speed_air/edit.png") !important;}
+.speeddial-reload-button {
+list-style-image: url("chrome://oxygenkdeoptions/skin/speed_air/reload.png") !important;}
+.speeddial-newtab-button {
+list-style-image: url("chrome://oxygenkdeoptions/skin/speed_air/newtab.png") !important;}
+
+.speeddialThumb[loading="true"] .bookmark-item {
+list-style-image: url("chrome://global/skin/icons/loading_16.png") !important;
+}
+
+.speeddial-container {
+border:1px solid transparent !important;
+background-color:transparent !important;
+margin:3px 15px 15px 15px !important;
+-moz-border-radius:4px !important;
+}
+
+#speeddialTabbox-tabs {
+-moz-border-image: none !important;
+border-bottom: 1px solid rgba(0,0,0,.2) !important;
+-moz-box-shadow:none !important; 
+margin:0 !important;
+}
+
+.sd-tab {
+-moz-appearance: none !important;
+background: -moz-linear-gradient(top,  #F2F2F2,#EBEAEA) !important;
+border-top:1px solid #8F979E !important;
+border-bottom:none !important;
+border-left:1px solid #8F979E !important;
+border-right:1px solid #8F979E !important;
+padding: 0.2em 1em !important;
+margin: 0.5em .5em 0em .5em !important;
+color:rgb(0,0,0) !important;
+-moz-border-radius:3px 3px 0px 0px !important;
+}
+
+.sd-tab:hover {
+background: -moz-linear-gradient(top,  #A8DEFF,#F2F2F2) !important;
+color:rgba(0,0,0,.5) !important;
+}
+
+.sd-tab[selected="true"] {
+-moz-user-focus: normal;
+-moz-border-image: none !important;
+font-weight:normal !important;
+text-shadow: 1px 1px 1px #fff !important;
+background: -moz-linear-gradient(top,  #A8DEFF,#F2F2F2) !important;
+border-bottom:1px solid #F2F2F2 !important;
+}
+
+.sd-tabs-right,.sd-tabs-left {border:none !important;}
+
+
+.speeddialThumb[speeddial="1"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/1.png') !important;}
+.speeddialThumb[speeddial="2"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/2.png') !important;}
+.speeddialThumb[speeddial="3"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/3.png') !important;}
+.speeddialThumb[speeddial="4"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/4.png') !important;}
+.speeddialThumb[speeddial="5"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/5.png') !important;}
+.speeddialThumb[speeddial="6"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/6.png') !important;}
+.speeddialThumb[speeddial="7"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/7.png') !important;}
+.speeddialThumb[speeddial="8"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/8.png') !important;}
+.speeddialThumb[speeddial="9"] .speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/9.png') !important;}
+.speeddial-container[assigned="f"] { background-image: url('chrome://oxygenkdeoptions/skin/speed_air/numbers/free.png') !important;}
+
+#speeddialTabbox-panelContainer, #speeddialWindow * tabpanel {
+background-color:transparent !important;
+background:url("chrome://mozapps/skin/extensions/circles.png") top left no-repeat,
+white url("chrome://mozapps/skin/extensions/tile.gif") top left repeat-x !important; }
+
+#speeddial-multikey-background,panel #multikeyMainSubBox {
+background-image:url("chrome://mozapps/skin/extensions/circles.png"),
+url("chrome://mozapps/skin/extensions/tile.gif") !important;
+background-color:white !important;
+background-position:top left,top left !important;
+background-repeat:no-repeat,repeat-x !important;
+}
+
+panel #multikeyMainSubBox {
+-moz-border-image: url("chrome://browser/skin/subskins/bg2.png") 12 12 12 12  stretch stretch !important;
+border-width: 5px !important;
+}
+
+#multikeyMainSubBox {
+color:#000 !important;
+}
+
+#multikeyCurrentDialIcon {
+  max-width: 16px !important;
+  max-height: 16px !important;
+}
+
+.multikeyDigit {
+list-style-image: url('chrome://oxygenkdeoptions/skin/speed_air/multikey.png') !important;
+border-width: 6px !important;
+-moz-border-image: url("chrome://browser/skin/subskins/button.png") 6 stretch stretch !important;
+}

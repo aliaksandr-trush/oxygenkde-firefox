@@ -1,0 +1,15 @@
+ @-moz-document url("chrome://browser/content/browser.xul") {
+#main-window[sizemode="normal"] #sidebar-header,
+#main-window[sizemode="normal"]  #navigator-toolbox > toolbar:not([autohide="true"]),
+#main-window[sizemode="normal"]  #navigator-toolbox > #toolbar-menubar > toolbarspring,
+#main-window[sizemode="normal"]  #navigator-toolbox > #toolbar-menubar:not([autohide="true"]),
+#main-window[sizemode="normal"]  #navigator-toolbox > toolbarspacer {
+ -moz-binding: url("chrome://oxygenkdeoptions/content/script.xml#toolbar-drag");
+}
+#main-window[sizemode="normal"]  #navigator-toolbox > #TabsToolbar,#addon-bar {
+-moz-binding: url("chrome://oxygenkdeoptions/content/script.xml#toolbar-drag") !important;
+}
+#navigator-toolbox > #TabsToolbar {
+  -moz-binding: none !important;
+}
+}

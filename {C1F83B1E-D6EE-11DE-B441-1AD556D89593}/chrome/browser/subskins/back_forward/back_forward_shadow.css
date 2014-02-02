@@ -1,0 +1,25 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml"); /* namespace for HTML elements */
+
+toolbar[mode="icons"] #back-button {
+}
+
+toolbar[iconsize="large"][mode="icons"] #back-button {
+list-style-image: url("chrome://browser/skin/Toolbar.png") !important;
+-moz-image-region: rect(4px 393px 30px 368px) !important;}
+toolbar[iconsize="large"][mode="icons"] #back-button:not([disabled="true"]):hover {
+-moz-image-region: rect(38px 393px 64px 368px) !important;}
+toolbar[iconsize="large"][mode="icons"] #back-button[disabled="true"] {
+-moz-image-region: rect(72px 393px 98px 368px) !important;}
+toolbar[iconsize="large"][mode="icons"] #back-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(106px 393px 132px 368px) !important;}
+
+toolbar[iconsize="large"][mode="icons"] #forward-button {
+list-style-image: url("chrome://browser/skin/Toolbar.png") !important;
+-moz-image-region: rect(7px 422px 28px 396px) !important;}
+/*toolbar[iconsize="large"][mode="icons"] #forward-button:not([disabled="true"]):hover {
+-moz-image-region: rect(41px 422px 62px 396px) !important;}*/
+toolbar[iconsize="large"][mode="icons"] #forward-button[disabled="true"] {
+-moz-image-region: rect(75px 422px 96px 396px) !important;}
+toolbar[iconsize="large"][mode="icons"] #forward-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(109px 422px 130px 396px) !important;}

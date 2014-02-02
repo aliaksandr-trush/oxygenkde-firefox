@@ -1,0 +1,86 @@
+
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+#warningScreen
+{
+  background: url("chrome://browser/skin/subskins/tile.gif") repeat-x #fff;
+}
+
+#warningBox
+{
+  position: relative;
+  min-width: 13em;
+  max-width: 52em;
+  margin: 4em auto;
+border-style:solid;
+-moz-border-image: url("chrome://browser/skin/subskins/bg4.png") 22 22 22 22  stretch stretch;
+border-image: url("chrome://browser/skin/subskins/bg4.png") 22 22 22 22 fill stretch stretch;
+
+border-width: 12px;
+
+  background-color:transparent;
+  padding: 2em;
+  -moz-padding-start: 30px;
+}
+
+#warningInnerBox
+{
+ max-width: 50em;
+}
+
+#warningTitle
+{
+  margin: 0 0 .6em 0;
+  font-size: 160%;
+  border-bottom-width: 1px;
+-moz-border-image: url("chrome://browser/skin/subskins/category_h1.png") 1 1 1 1  stretch stretch;
+}
+
+#warningText
+{
+  font-size: 110%;
+  margin-left: 0;
+}
+
+#warningButton
+{
+  margin-top: 0.6em;
+}
+
+#showWarningNextTime
+{
+  margin-top: 0.6em;
+}
+
+#exclam
+{
+  list-style-image: url("chrome://global/skin/icons/warning-large.png");
+  -moz-margin-end: 3em;
+}
+
+#configTreeBody::-moz-tree-cell-text(user)
+{
+  font-weight: bold;
+}
+
+#configTreeBody::-moz-tree-cell-text(locked)
+{
+  font-style: italic;
+}
+
+#configTree 
+{  
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#filterRow
+{
+  margin-top: 5px;
+}
+
+#warningInnerBox > hbox  {
+margin-top:2em;
+}

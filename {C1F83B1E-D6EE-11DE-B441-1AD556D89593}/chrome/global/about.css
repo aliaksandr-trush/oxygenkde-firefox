@@ -1,0 +1,58 @@
+
+html {
+background-color:transparent;
+background:white url("chrome://mozapps/skin/extensions/tile.gif") top left repeat-x;
+font: message-box;
+  padding: 0 1em;
+}
+
+body {
+  position: relative;
+  min-width: 330px;
+  max-width: 50em;
+  margin: 4em auto;
+  padding: 3em;
+  -moz-padding-start: 30px;
+  background-color: transparent;
+  color: #000;
+  border-style:solid;
+  border-color:transparent;
+  -moz-border-image: url("chrome://browser/skin/subskins/bg4.png") 22 22 22 22  stretch stretch;
+  border-image: url("chrome://browser/skin/subskins/bg4.png") 22 22 22 22 fill stretch stretch;
+  border-width: 12px;
+}
+
+.aboutPageWideContainer {
+  max-width: 80%;
+}
+
+#aboutLogoContainer {
+  border: 1px solid ThreeDLightShadow;
+  width: 300px;
+  margin-bottom: 2em;
+}
+
+img {
+  border: 0;
+}
+
+#version {
+  font-weight: bold;
+  color: #909090;
+  margin: -24px 0 9px 17px;
+}
+
+ul {
+  margin: 0;
+  -moz-margin-start: 1.5em;
+  padding: 0;
+  list-style: square;
+}
+
+ul > li {
+  margin-top: .5em;
+}
+
+th, td {
+  padding: 0 5px;
+}

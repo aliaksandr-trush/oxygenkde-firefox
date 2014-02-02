@@ -1,0 +1,24 @@
+ @namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url("about:home") {
+
+#downloads::before {
+content: url("chrome://browser/skin/subskins/abouthome/downloads.png") !important;}
+#bookmarks::before {
+content: url("chrome://browser/skin/subskins/abouthome/bookmarks.png") !important;}
+#history::before {
+content: url("chrome://browser/skin/subskins/abouthome/history.png") !important;}
+#addons::before {
+content: url("chrome://browser/skin/subskins/abouthome/extensions.png") !important;}
+#sync::before {
+content: url("chrome://browser/skin/subskins/abouthome/sync.png") !important;}
+#settings::before {
+content: url("chrome://browser/skin/subskins/abouthome/settings.png") !important;}
+#apps::before {
+content: url("chrome://browser/skin/subskins/abouthome/apps.png") !important;}
+#restorePreviousSession::before {
+content: url("chrome://browser/skin/subskins/abouthome/restore-large.png") !important;}
+body[narrow] #restorePreviousSession::before {
+content: url("chrome://browser/skin/subskins/abouthome/restore.png") !important;}
+
+}

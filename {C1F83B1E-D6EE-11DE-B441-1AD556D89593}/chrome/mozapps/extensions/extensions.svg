@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="greyscale">
+    <feColorMatrix values="0.3333 0.3333 0.3333 0 0
+                           0.3333 0.3333 0.3333 0 0
+                           0.3333 0.3333 0.3333 0 0
+                           0      0      0      1 0"/>
+  </filter>
+  
+   <filter id="Luminance"> 
+      <feColorMatrix type="luminanceToAlpha" result="a" /> 
+      <feComposite in="SourceGraphic" in2="a" operator="in" /> 
+    </filter> 
+    
+    
+     <filter id="HueRotate"> 
+      <feColorMatrix type="hueRotate" values="30" /> 
+    </filter> 
+  
+</svg>

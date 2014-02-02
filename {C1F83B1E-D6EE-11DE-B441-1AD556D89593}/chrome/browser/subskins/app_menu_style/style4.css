@@ -1,0 +1,72 @@
+#appmenu-toolbar-button,
+#appmenu-button {
+-moz-appearance: none !important;
+background: -moz-linear-gradient(top,  rgba(242, 242, 242,.7),rgba(193, 194, 194,.7)) !important;
+background-clip: border-box !important;
+border-radius: 3px !important;
+border:1px solid rgba(143, 151, 158,.8) !important;
+box-shadow:0px 0px 1px 1px rgba(0,0,0,.1) !important;
+text-shadow: 1px 1px 1px rgba(255,255,255,.9) !important;
+padding: 0 .5em !important;
+margin: 2px 4px !important;
+}
+
+#appmenu-toolbar-button > .toolbarbutton-text {
+-moz-margin-start:3px !important;
+}
+
+#appmenu-toolbar-button:hover:not(:active):not([open]),
+#appmenu-button:hover:not(:active):not([open]) {
+-moz-box-shadow:0px 0px 1px 1px #89B8F7 !important;
+}
+
+#appmenu-toolbar-button:hover:active,
+#appmenu-toolbar-button[open],
+#appmenu-button:hover:active,
+#appmenu-button[open] { 
+background: -moz-linear-gradient(top,  #C1C2C2,#F2F2F2) !important;
+-moz-box-shadow:0px 0px 1px 1px #89B8F7 !important;
+}
+
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker,
+#appmenu-button > .button-box > .button-menu-dropmarker {
+  list-style-image: url("chrome://browser/skin/appmenu-dropmarker_dark.png") !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  -moz-margin-start: .5em !important;
+}
+
+#appmenu-toolbar-button > .toolbarbutton-text {color:rgb(20,20,20) !important;}
+
+#appmenu-toolbar-button > .toolbarbutton-text,
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker {
+  margin-top: -2px !important;
+  margin-bottom: -2px !important;
+}
+
+/* PRIVATE BROWING MODE */
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button,
+#main-window[privatebrowsingmode=temporary] #appmenu-button {
+  background-image: -moz-linear-gradient(rgb(153,38,211), rgb(105,19,163) 95%) !important;
+  border-color: rgba(43,8,65,.5) !important;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:active,
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button[open],
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:active,
+#main-window[privatebrowsingmode=temporary] #appmenu-button[open] {
+background-image: -moz-linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+}
+
+#main-window[privatebrowsingmode=temporary] #appmenu-toolbar-button:hover:not(:active):not([open]),
+#main-window[privatebrowsingmode=temporary] #appmenu-button:hover:not(:active):not([open]){
+background-image: -moz-radial-gradient(center bottom, farthest-side, rgba(240,193,255,.5) 10%, rgba(240,193,255,0) 70%),-moz-radial-gradient(center bottom, farthest-side, rgb(192,81,247), rgba(236,172,255,0)),
+-moz-linear-gradient(rgb(144,20,207), rgb(95,0,158) 95%) !important;
+border-color: rgba(43,8,65,.9) !important;
+box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,
+0 0 2px 1px rgba(240,193,255,.7) inset,
+0 -1px 0 rgba(240,193,255,.5) inset !important;
+}

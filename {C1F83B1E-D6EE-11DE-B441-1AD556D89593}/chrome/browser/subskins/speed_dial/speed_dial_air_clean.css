@@ -1,0 +1,8 @@
+#speeddialWindow * .bookmark-item {
+max-height:0px !important;
+max-width:0px !important;
+padding:2px !important;}
+.thumbnail-title {display:none !important;}
+.speeddial-edit-button,.speeddial-reload-button,.speeddial-newtab-button {
+display:none !important;}
+

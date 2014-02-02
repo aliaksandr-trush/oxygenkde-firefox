@@ -1,0 +1,16 @@
+treechildren::-moz-tree-twisty(hover) {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-clsd.png") !important;}
+treechildren::-moz-tree-twisty(hover, open) {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-open.png") !important;}
+tree[chromedir="rtl"] > treechildren::-moz-tree-twisty {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-clsd-rtl.png") !important;}
+tree[chromedir="rtl"] > treechildren::-moz-tree-twisty(open) {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-open-rtl.png") !important;}
+tree[chromedir="rtl"] > treechildren::-moz-tree-twisty(hover) {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-clsd-rtl.png") !important;}
+tree[chromedir="rtl"] > treechildren::-moz-tree-twisty(hover, open) {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-open-rtl.png") !important;}
+treechildren::-moz-tree-twisty {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-clsd.png") !important;}
+treechildren::-moz-tree-twisty(open) {
+list-style-image: url("chrome://browser/skin/subskins/arrowstotrees/dark/twisty-open.png") !important;}

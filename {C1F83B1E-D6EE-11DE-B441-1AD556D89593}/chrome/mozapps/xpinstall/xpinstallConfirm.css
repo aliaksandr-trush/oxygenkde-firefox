@@ -1,0 +1,90 @@
+#xpinstallheader {
+  margin-bottom: 2em;
+}
+
+#itemList {
+  height: 14em;
+-moz-appearance: none !important;
+margin: 2px 4px;
+border:none;
+-moz-box-shadow:inset 0px 1px 1px 0px rgba(0,0,0,.15),
+0px 0px 0px 1px rgba(0,0,0,.2);
+-moz-border-radius:3px;
+background-color: #ffffff;
+color: #000000;
+}
+
+#itemList:hover {
+-moz-box-shadow:inset 0px 0px 2px 1px rgba(110, 214, 255,.7),
+0px 0px 0px 1px rgba(110, 214, 255,.9);
+-moz-transition-duration: 0.3s;
+}  
+  
+#itemList:focus {
+-moz-box-shadow:inset 0px 0px 2px 1px rgba(58, 167, 221,.7),
+0 0 0px 1px rgba(58, 167, 221,.9);
+-moz-transition-duration: 0.3s;
+}
+
+#itemWarningIntro {
+  -moz-margin-start: 8px;
+}
+
+#dialogContentBox {
+  padding: 5px;
+}
+
+installitem {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -moz-padding-start: 5px;
+  -moz-padding-end: 0;
+  border-bottom: 1px dotted #C0C0C0;
+  margin-bottom: 5px;
+}
+
+.alert-icon {
+  list-style-image: url("chrome://global/skin/icons/warning-large.png");
+  width: 48px;
+  height: 48px;
+  -moz-margin-end: 20px;
+}
+
+.warning {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.xpinstallIconContainer {
+  width: 32px;
+  height: 32px;
+  -moz-margin-end: 5px;
+}
+
+.xpinstallItemName {
+  font-weight: bold;
+}
+
+.xpinstallItemSigned {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.xpinstallItemURL {
+  -moz-appearance: none;
+  border: none;
+  padding: 0;
+  background-color: -moz-Field;
+  color: -moz-FieldText;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  -moz-margin-start: 6px;
+  -moz-margin-end: 5px;
+}
+
+.xpinstallItemIcon {
+  max-width: 32px;
+  max-height: 32px;
+  list-style-image: url("chrome://mozapps/skin/xpinstall/xpinstallItemGeneric.png");
+}

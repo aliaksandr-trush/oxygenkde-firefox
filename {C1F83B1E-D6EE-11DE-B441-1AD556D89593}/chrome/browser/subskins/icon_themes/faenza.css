@@ -1,0 +1,183 @@
+ 
+/* BACK button */
+
+toolbar[iconsize="large"][mode="icons"] #back-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Toolbar-Faenza.png") !important;
+-moz-image-region: rect(0px 24px 24px 0px) !important;}
+
+toolbar[iconsize="large"][mode="icons"] #back-button:not([disabled="true"]):hover {
+-moz-image-region: rect(0px 24px 24px 0px) !important;}
+
+toolbar[iconsize="large"][mode="icons"] #back-button[disabled="true"] {
+-moz-image-region: rect(24px 24px 48px 0px) !important;}
+
+toolbar[iconsize="large"][mode="icons"] #back-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(0px 24px 24px 0px) !important;}
+
+/* forward button */
+
+
+toolbar[iconsize="large"][mode="icons"] #forward-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Toolbar-Faenza.png") !important;
+-moz-image-region: rect(0px 48px 24px 24px) !important;}
+
+toolbar[iconsize="large"][mode="icons"] #forward-button:not([disabled="true"]):hover {
+-moz-image-region: rect(0px 48px 24px 24px) !important;}
+
+toolbar[iconsize="large"][mode="icons"] #forward-button[disabled="true"] {
+-moz-image-region: rect(24px 48px 48px 24px) !important;}
+
+toolbar[iconsize="large"][mode="icons"] #forward-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(0px 48px 24px 24px) !important;}
+
+
+/* stop button */
+#stop-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Toolbar-Faenza.png") !important;
+-moz-image-region: rect(0px 72px 24px 48px) !important;}
+#stop-button:not([disabled="true"]):hover {-moz-image-region: rect(24px 72px 48px 48px);}
+#stop-button[disabled="true"] {-moz-image-region: rect(48px 72px 72px 48px);}
+#stop-button:not([disabled="true"]):hover:active {-moz-image-region: rect(96px 72px 120px 48px);}
+
+
+/* reload button */
+#reload-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Toolbar-Faenza.png") !important;
+-moz-image-region: rect(0px 96px 24px 72px) !important;}
+#reload-button:not([disabled="true"]):hover {-moz-image-region: rect(24px 96px 48px 72px);}
+#reload-button[disabled="true"] {-moz-image-region: rect(48px 96px 72px 72px);}
+#reload-button:not([disabled="true"]):hover:active {-moz-image-region: rect(96px 96px 120px 72px);}
+
+
+/* home button */
+#home-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Toolbar-Faenza.png") !important;
+-moz-image-region: rect(0px 120px 24px 96px) !important;}
+#home-button:not([disabled="true"]):hover {-moz-image-region: rect(24px 120px 48px 96px);}
+#home-button[disabled="true"] {-moz-image-region: rect(48px 120px 72px 96px);}
+#home-button:not([disabled="true"]):hover:active {-moz-image-region: rect(96px 120px 120px 96px);}
+
+
+/* download manager button */
+#downloads-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Toolbar-Faenza.png") !important;
+-moz-image-region: rect(0px 144px 24px 120px) !important;}
+#downloads-button:not([disabled="true"]):hover {-moz-image-region: rect(24px 144px 48px 120px);}
+#downloads-button[disabled="true"] {-moz-image-region: rect(48px 144px 72px 120px);}
+#downloads-button:not([disabled="true"]):hover:active {-moz-image-region: rect(96px 144px 120px 120px);}
+
+#oxygenkde_up-button { 
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/go-up.png") !important;}
+#oxygenkde_up-button:hover { 
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/go-up_dis.png") !important;}
+#oxygenkde_up-button[disabled=true] { 
+list-style-image: url("chrome://oxygenkdeoptions/skin/up/up_disabled.png"); }
+
+.question-icon {
+list-style-image:url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Question.png") !important;
+}
+
+.alert-icon {
+list-style-image:url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/Warning.png") !important;
+}
+
+.tab-close-button {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/tab-close_dis.png") !important;
+-moz-image-region:auto !important;}
+
+
+.tab-close-button[selected="true"],.close-button.tabs-closebutton {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/tab-close.png") !important;
+-moz-image-region:auto !important;}
+
+
+button[icon="accept"] .button-icon {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/ok.png") !important;}
+
+button[icon="cancel"] .button-icon {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/cancel.png") !important;}
+
+
+button[label="Chiudi"] .button-icon {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/close.png") !important;}
+
+.xclear {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/clear.png") !important;}
+
+#feed-button,#feed-button:hover {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/rss.png") !important;
+-moz-image-region:auto !important;
+}
+
+/* star button */
+#star-button {
+  padding: 0 2px;
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/star_no.png") !important;
+-moz-image-region:auto !important;
+}
+#star-button[starred="true"] {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/star.png") !important;
+-moz-image-region:auto !important;
+}
+
+.search-go-button,.search-go-button:hover {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/find.png") !important;
+-moz-image-region:auto !important;
+}
+
+#oxygenkde_conf-button,#oxygenkde_conf-button:hover {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/preferences.png") !important;
+-moz-image-region:auto !important;
+}
+
+.tabs-newtab-button,.tabs-newtab-button:hover,.tabs-newtab-button:hover:active,
+#TabsToolbar > #new-tab-button ,#TabsToolbar > #new-tab-button:hover,#TabsToolbar > #new-tab-button:hover:active,
+#TabsToolbar > #wrapper-new-tab-button > #new-tab-button,
+#TabsToolbar > #wrapper-new-tab-button > #new-tab-button:hover,
+#TabsToolbar > #wrapper-new-tab-button > #new-tab-button:hover:active  {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/tab-new.png") !important;
+-moz-image-region:auto !important;
+}
+
+
+/* NEW */
+
+toolbarbutton.bookmark-item[container] {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/stock_folder.png") !important;
+-moz-image-region: auto !important;
+}
+
+.bookmark-item  {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/text-html.png") !important;
+  -moz-image-region: auto !important;
+}
+
+#bookmarks-menu-button,
+.bookmark-item[container="true"][query="true"],
+.bookmark-item:hover[container="true"][query="true"],
+.bookmark-item:hover:active[container="true"][query="true"],
+.bookmark-item[container="true"][query="true"][open] {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/bookmarks16.png") !important;
+-moz-image-region: auto !important;
+}
+
+
+#bookmarks-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/bookmarks.png") !important;
+-moz-image-region: auto !important;}
+#new-tab-button {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/tab_new.png") !important;
+-moz-image-region: auto !important;}
+#new-window-button {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/window-new.png") !important;
+-moz-image-region: auto !important;}
+#cut-button {
+list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/edit-cut.png") !important;
+-moz-image-region: auto !important;}
+#copy-button {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/edit-copy.png") !important;
+-moz-image-region: auto !important;}
+#paste-button {
+  list-style-image: url("chrome://browser/skin/subskins/icon_themes/Faenza/toolbar/edit-paste.png") !important;
+-moz-image-region: auto !important;}
+

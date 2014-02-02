@@ -1,0 +1,125 @@
+/*
+ * The contents of this file are subject to the Netscape Public
+ * License Version 1.1 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of
+ * the License at http://www.mozilla.org/NPL/
+ *
+ * Software distributed under the License is distributed on an "AS
+ * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * rights and limitations under the License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is Netscape
+ * Communications Corporation. Portions created by Netscape are
+ * Copyright (C) 1998-1999 Netscape Communications Corporation. All
+ * Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ */
+
+/* ===== radio.css ===================================================
+  == Styles used by the XUL radio element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: radio ::::: */
+
+radio {
+  -moz-box-align: center;
+  margin: 2px;
+  padding: 1px 2px 1px 4px;
+}
+
+.radio-label-box {
+  margin-left: 2px;
+  border: 1px solid transparent;
+  padding: 0px 0px 1px 1px;
+}
+
+.radio-icon {
+  margin-right: 2px;
+}
+
+.radio-label {
+  margin: 0 !important;
+}
+
+/* radio box*/
+.radio-check-box1 {
+width:16px;
+height:16px;
+list-style-image: none;
+box-shadow:inset 0 0 0px 1px rgba(240,237,233,.8) , 0 1px 2px 0px rgba(0,0,0,.6);
+background: -moz-linear-gradient(0% 75% 90deg,  rgba(211,208,205,.9),rgba(228,224,221,.9) );
+border-radius: 50%;
+}
+
+
+/* ..... focused state ..... */
+
+/* radio[focused="true"] .radio-label-box{ */
+/*   border: 1px dotted #66C3F0;	 */
+  /*-moz-border-radius:50%;*/
+/* } */
+
+radio[focused="true"] .radio-check-box1 {
+list-style-image: none;
+box-shadow:  inset 0 0 0px 1px rgba(255,255,255,.5),0px 0px 1px 1px rgb(58,167,221);
+}
+
+radio[selected="true"][focused="true"] .radio-check-box1 {
+list-style-image: url("chrome://global/skin/radio/radio-checked.png");
+}
+
+
+/* ::::: pressed image ::::: */
+
+radio:active .radio-check-box1 {
+list-style-image: none;
+box-shadow: inset 0 0 0px 1px rgba(255,255,255,.5) ,0px 0px 1px 1px rgb(110,214,255);
+}
+
+radio[selected="true"]:active .radio-check-box1 {
+list-style-image: url("chrome://global/skin/radio/radio-checked.png");
+box-shadow: inset 0 0 0px 1px rgba(255,255,255,.5) ,0px 0px 1px 1px rgb(110,214,255);
+}
+
+
+/* ..... selected state ..... */
+
+radio[selected="true"] .radio-check-box1 {
+list-style-image: url("chrome://global/skin/radio/radio-checked.png");
+}
+
+
+/* ..... hover state ..... */
+
+radio:not([disabled="true"]):hover .radio-check-box1 {
+list-style-image:none;
+box-shadow: inset 0 0 0px 1px rgba(255,255,255,.5) ,0px 0px 1px 1px rgb(110,214,255);
+}
+
+radio[selected="true"]:not([disabled="true"]):hover .radio-check-box1 {
+list-style-image:url("chrome://global/skin/radio/radio-checked.png");
+box-shadow: inset 0 0 0px 1px rgba(255,255,255,.5) ,0px 0px 1px 1px rgb(110,214,255);
+}
+
+
+/* ..... disabled state ..... */
+radio[disabled="true"] {
+  opacity: 0.4;
+  color: #785130;
+}
+
+radio[disabled="true"] .radio-check-box1 {
+  list-style-image: none;
+}
+
+radio[selected="true"][disabled="true"] .radio-check-box1 {
+  list-style-image: url("chrome://global/skin/radio/radio-checked.png");
+}

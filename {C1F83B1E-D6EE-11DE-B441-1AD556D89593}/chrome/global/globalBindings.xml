@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE bindings [
+<!ENTITY % tabBrowserDTD SYSTEM "chrome://global/locale/tabbrowser.dtd" >
+%tabBrowserDTD;
+<!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+%globalDTD;
+]>
+
+<bindings id="globalBindings"
+   xmlns="http://www.mozilla.org/xbl"
+   xmlns:html="http://www.w3.org/1999/xhtml"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="radio"
+           extends="chrome://global/content/bindings/radio.xml#radio">
+    <content>
+      <xul:hbox class="radio-check-box1" xbl:inherits="selected,checked,disabled">
+        <xul:hbox class="radio-check-box2" flex="1">
+          <xul:image class="radio-check" xbl:inherits="selected,checked,disabled"/>
+        </xul:hbox>
+      </xul:hbox>
+      <xul:hbox class="radio-label-box" xbl:inherits="flex">
+        <xul:image class="radio-icon" xbl:inherits="src"/>
+        <xul:label class="radio-label" xbl:inherits="xbl:text=label,flex,accesskey,crop"/>
+      </xul:hbox>
+    </content>
+  </binding>
+
+  <binding id="radio-with-spacing"
+           extends="chrome://global/skin/globalBindings.xml#radio">
+
+    <content>
+      <xul:hbox class="radio-spacer-box">
+        <xul:hbox class="radio-check-box1" xbl:inherits="selected,checked,disabled">
+          <xul:hbox class="radio-check-box2" flex="1">
+            <xul:image class="radio-check" xbl:inherits="selected,checked,disabled"/>
+          </xul:hbox>
+        </xul:hbox>
+      </xul:hbox>
+      <xul:hbox class="radio-label-center-box" flex="1">
+        <xul:hbox class="radio-label-box" flex="1">
+          <xul:image class="radio-icon" xbl:inherits="src"/>
+          <xul:label class="radio-label" xbl:inherits="xbl:text=label,accesskey,crop" flex="1"/>
+        </xul:hbox>
+      </xul:hbox>
+    </content>
+  </binding>
+
+  <binding id="toolbarpaletteitem-spacer" extends="chrome://global/content/bindings/toolbar.xml#toolbarpaletteitem">
+    <content>
+      <xul:spacer class="spacer-left"/>
+      <children/>
+      <xul:spacer class="spacer-right"/>
+    </content>
+  </binding>
+  
+  <binding id="tabs" extends="chrome://global/content/bindings/tabbox.xml#tabs">
+    <content>
+      <xul:spacer class="tab-border-top-left-cap"/>
+      <xul:spacer class="tab-border-top-left"/>
+      <children/>
+      <xul:stack flex="1">
+        <xul:spacer class="tab-border-top-right"/>
+        <xul:hbox class="tabs-misc-dec" align="center">
+          <xul:spacer flex="1"/>
+        </xul:hbox>
+      </xul:stack>
+      <xul:spacer class="tab-border-top-right-cap"/>
+    </content>
+  </binding>
+   
+</bindings>

@@ -1,0 +1,7 @@
+scrollbar[orient="vertical"] > scrollbarbutton[sbattr="scrollbar-up-bottom"],
+scrollbar[orient="horizontal"] > scrollbarbutton[sbattr="scrollbar-up-bottom"] {
+display: none !important;}
+
+scrollbar[orient="vertical"] > scrollbarbutton[sbattr="scrollbar-down-bottom"],
+scrollbar[orient="horizontal"] > scrollbarbutton[sbattr="scrollbar-down-bottom"] {
+display:  -moz-box !important;}

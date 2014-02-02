@@ -1,0 +1,198 @@
+/*
+ *  This defines the look-and-feel styling of the error pages.
+ *  (see: netError.xhtml)
+ *
+ *  Original styling by William Price <bugzilla@mob.rice.edu>
+ *  Updated by: Steven Garrity <steven@silverorange.com>
+ *              Henrik Skupin  <mozilla@hskupin.info>
+ */
+
+html {
+background-color:transparent;
+background:white url("chrome://mozapps/skin/extensions/tile.gif") top left repeat-x;
+}
+
+body {
+font: message-box;
+}
+
+h1 {
+margin: 0 0 .6em 0;
+font-size: 160%;
+border-bottom-width: 1px;
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://browser/skin/subskins/category_h1.png") 1 1 1 1  stretch stretch;
+border-image: url("chrome://browser/skin/subskins/category_h1.png") 1 1 1 1 fill stretch stretch;
+}
+
+ul, ol {
+margin: 0;
+-moz-margin-start: 1.5em;
+padding: 0;
+}
+
+ul > li, ol > li {
+margin-bottom: .5em;
+list-style-image: url("chrome://browser/skin/icons/16/checkbox.png");
+}
+
+ul {
+list-style: normal;
+}
+
+#errorPageContainer {
+position: relative;
+min-width: 13em;
+max-width: 52em;
+margin: 4em auto;
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://browser/skin/subskins/bg4.png") 22 22 22 22  stretch stretch;
+border-image: url("chrome://browser/skin/subskins/bg4.png") 22 22 22 22 fill stretch stretch;
+
+border-width: 12px;
+background-color:transparent;
+padding: 2.5em;
+-moz-padding-start: 30px;
+background: url("chrome://global/skin/icons/warning-large.png") left 0 no-repeat;
+-moz-background-origin: content;
+background-origin: content-box;
+}
+
+#errorPageContainer.certerror {
+  background-image: url("chrome://global/skin/icons/sslWarning.png");
+}
+
+body[dir="rtl"] #errorPageContainer {
+  background-position: right 0;
+}
+
+#errorTitle {
+  -moz-margin-start: 50px;
+text-shadow: 1px 1px 1px #fff;
+}
+
+#errorLongContent {
+  -moz-margin-start: 50px;
+}
+
+#errorShortDesc > p {
+  overflow: auto;
+  font-size: 100%;
+  white-space: pre-wrap;
+}
+
+#errorLongDesc {
+  -moz-padding-end: 3em;
+  font-size: 100%;
+}
+
+#errorLongDesc > p {
+}
+
+#errorTryAgain {
+  margin-top: 2em;
+  -moz-margin-start: 50px;
+}
+
+#brand {
+  position: absolute;
+  right: 0;
+  bottom: -1.5em;
+  -moz-margin-end: 10px;
+  opacity: .4;
+}
+
+body[dir="rtl"] #brand {
+  right: auto;
+  left: 0;
+}
+
+#brand > p {
+  margin: 0;
+}
+
+#errorContainer {
+  display: none;
+}
+
+#securityOverrideDiv {
+  padding-top: 10px;
+}
+
+#securityOverrideContent {
+  background-color: InfoBackground;
+  color: InfoText;
+  padding: 10px;
+  -moz-border-radius: 10px;
+}
+
+/* Custom styling for 'blacklist' error class */
+:root.blacklist #errorTitle, :root.blacklist #errorLongContent,
+:root.blacklist #errorShortDesc, :root.blacklist #errorLongDesc,
+:root.blacklist a {
+}
+
+:root.blacklist #errorPageContainer {
+  background-image: url("chrome://global/skin/icons/blacklist_large.png");
+}
+
+
+:root.blacklist  {
+background-image: none;
+background-color: #590000;
+}
+
+#ignoreWarningButton  {
+color:#000; 
+text-decoration:none !important;
+padding-left:10px;
+padding-right:10px;
+}
+
+:root.blacklist #errorPageContainer {
+background-color: #590000;
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://browser/skin/subskins/bg4_dark.png") 22 22 22 22  stretch stretch;
+border-image: url("chrome://browser/skin/subskins/bg4_dark.png") 22 22 22 22 fill stretch stretch;
+
+border-width: 12px;
+color:white;
+text-shadow: 1px 1px 1px #000;
+}
+
+:root.blacklist #errorTitle {
+text-shadow: 1px 1px 1px #000;
+}
+
+:root.blacklist #ignoreWarningButton  {
+cursor:pointer;
+color:#fff; 
+}
+
+:root.blacklist #errorTryAgain {
+  display: none;
+}
+
+:root.blacklist #errorPageContainer {
+background-image: url("chrome://global/skin/icons/blacklist64.png");
+}
+
+:root.blacklist #errorTitle,:root.blacklist #errorLongContent {
+-moz-padding-start:20px; 
+}
+
+:root.blacklist h1 {
+border-bottom-width: 1px;
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://browser/skin/subskins/category_h1_dark.png") 1 1 1 1  stretch stretch;
+border-image: url("chrome://browser/skin/subskins/category_h1_dark.png") 1 1 1 1 fill stretch stretch;
+}
+
+:root.blacklist #reportButton,
+:root.blacklist #getMeOutButton {
+padding:4px;
+}

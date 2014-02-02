@@ -1,0 +1,47 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/*
+ * The default namespace for this file is XUL. Be sure to prefix rules that
+ * are applicable to both XUL and HTML with '*|'.
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+
+/* Page background */
+*|*:root {
+  -moz-appearance: none;
+  padding: 18px;
+
+  color: WindowText;
+
+background-color:#eee !important;
+background-image:
+url("chrome://mozapps/skin/extensions/circles.png"),
+url("chrome://browser/skin/subskins/bg-sky.png") !important;
+background-position:top left,top left !important;
+background-repeat:no-repeat,repeat-x !important;
+}
+
+html|html {
+  font: message-box;
+}
+
+/* Content */
+*|*.main-content {
+  /* Needed to allow the radius to clip the inner content, see bug 595656 */
+  overflow: hidden;
+  color: rgb(20,20,20);
+border-style:solid;
+border-color:transparent;
+-moz-border-image: url("chrome://browser/skin/subskins/bg2.png") 12 12 12 12  stretch stretch;
+border-image: url("chrome://browser/skin/subskins/bg2.png") 12 12 12 12 fill stretch stretch;
+
+border-width: 5px;
+border-radius: 5px;
+  background-color: rgba(255,255,255,.3);
+  background-image: none;
+
+}

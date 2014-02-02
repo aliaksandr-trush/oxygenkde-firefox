@@ -1,0 +1,131 @@
+toolbar[mode="icons"] #back-button {
+-moz-box-shadow:none !important;
+box-shadow:none !important;
+border:none !important;
+padding:0 0 0 2px !important;
+margin:0 0px 0 0 !important;
+background-color:transparent !important;
+}
+
+toolbar[mode="icons"] #forward-button {
+-moz-box-shadow:none !important;
+box-shadow:none !important;
+border:none !important;
+-moz-padding-start: 0px !important;
+padding:0 !important;
+margin:0 !important;
+background-color:transparent !important;
+}
+
+toolbar[iconsize="large"][mode="icons"] #back-button {
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(0px 38px 34px 4px) !important;}
+toolbar[iconsize="large"][mode="icons"] #back-button:not([disabled="true"]):hover {
+-moz-image-region: rect(34px 38px 68px 4px) !important;}
+toolbar[iconsize="large"][mode="icons"] #back-button[disabled="true"] {
+-moz-image-region: rect(68px 38px 102px 4px) !important;}
+toolbar[iconsize="large"][mode="icons"] #back-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(102px 38px 136px 4px) !important;}
+toolbar[iconsize="large"][mode="icons"] #forward-button {
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(0px 63px 34px 38px) !important;
+-moz-transition: none !important;}
+toolbar[iconsize="large"][mode="icons"] #forward-button:not([disabled="true"]):hover {
+-moz-image-region: rect(34px 63px 68px 38px) !important;}
+toolbar[iconsize="large"][mode="icons"] #forward-button[disabled="true"] {
+-moz-image-region: rect(68px 63px 102px 38px) !important;}
+toolbar[iconsize="large"][mode="icons"] #forward-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(102px 63px 136px 38px) !important;}
+
+
+#unified-back-forward-button[forwarddisabled] > #back-button {
+margin-right:13px !important;
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(0px 38px 34px 4px) !important;
+}
+
+#unified-back-forward-button[forwarddisabled] > #back-button:hover {
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(34px 38px 68px 4px) !important;
+}
+
+#unified-back-forward-button[forwarddisabled] > #back-button[disabled="true"] {
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(68px 38px 102px 4px) !important;
+filter: url("chrome://mozapps/skin/extensions/extensions.svg#greyscale");
+}
+
+
+
+
+toolbar[iconsize="small"][mode="icons"] #back-button {
+list-style-image: url("chrome://browser/skin/back-forward-small.png") !important;
+-moz-image-region: rect(0px 26px 34px 4px) !important;}
+toolbar[iconsize="small"][mode="icons"] #back-button:not([disabled="true"]):hover {
+-moz-image-region: rect(34px 26px 68px 4px) !important;}
+toolbar[iconsize="small"][mode="icons"] #back-button[disabled="true"] {
+-moz-image-region: rect(68px 26px 102px 4px) !important;}
+toolbar[iconsize="small"][mode="icons"] #back-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(102px 26px 136px 4px) !important;}
+toolbar[iconsize="small"][mode="icons"] #forward-button {
+list-style-image: url("chrome://browser/skin/back-forward-small.png") !important;
+-moz-image-region: rect(0px 63px 34px 34px) !important;
+-moz-transition: none !important;}
+toolbar[iconsize="small"][mode="icons"] #forward-button:not([disabled="true"]):hover {
+-moz-image-region: rect(34px 63px 68px 34px) !important;}
+toolbar[iconsize="small"][mode="icons"] #forward-button[disabled="true"] {
+-moz-image-region: rect(68px 63px 102px 34px) !important;}
+toolbar[iconsize="small"][mode="icons"] #forward-button:not([disabled="true"]):hover:active {
+-moz-image-region: rect(102px 63px 136px 34px) !important;}
+
+
+toolbar[iconsize="small"][mode="icons"] #unified-back-forward-button[forwarddisabled] > #back-button {
+margin-right:0px !important;
+/* margin-left:6px !important; */
+list-style-image: url("chrome://browser/skin/back-forward-small.png") !important;
+-moz-image-region: rect(0px 26px 34px 4px) !important;
+}
+
+toolbar[iconsize="small"][mode="icons"] #unified-back-forward-button[forwarddisabled] > #back-button:hover {
+-moz-image-region: rect(34px 26px 68px 4px) !important;
+}
+
+
+
+
+
+
+
+window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[mode=icons], 
+#nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button > #forward-button {
+-moz-margin-end:0px !important;
+-moz-margin-start:4px !important;
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(0px 63px 34px 38px) !important;
+}
+
+window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[mode=icons], 
+#nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button > #forward-button:hover {
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(34px 63px 68px 38px) !important;
+}
+
+window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[mode=icons], 
+#nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button > #forward-button[disabled="true"] {
+list-style-image: url("chrome://browser/skin/back-forward.png") !important;
+-moz-image-region: rect(68px 63px 102px 38px) !important;
+}
+
+
+window:not([chromehidden~=toolbar]) :-moz-any(#nav-bar[mode=icons], 
+#nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button > #back-button {
+-moz-margin-end:0px !important;
+-moz-margin-start:0px !important;
+}
+
+
+window:not([chromehidden~=toolbar]) 
+:-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"][mode=icons],
+#nav-bar:not([currentset])[mode=icons]) > #unified-back-forward-button > #back-button {
+-moz-margin-end:6px !important;
+}

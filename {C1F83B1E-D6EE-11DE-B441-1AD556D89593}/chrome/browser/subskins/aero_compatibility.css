@@ -1,0 +1,16 @@
+ @media all and (-moz-windows-compositor)
+{
+#titlebar-buttonbox{display:-moz-box !important;}
+
+#main-window[chromemargin][tabsontop="true"]{
+-moz-appearance:-moz-win-borderless-glass !important;
+background-color:rgba(0,0,0,.3) !important;
+}
+
+#main-window[chromemargin][tabsontop="false"]{
+-moz-appearance:-moz-win-borderless-glass !important;
+background-color:rgba(0,0,0,.3) !important;
+}
+#main-window[chromemargin]:not(:-moz-lwtheme)[inFullscreen="true"]{
+-moz-appearance:none}
+}

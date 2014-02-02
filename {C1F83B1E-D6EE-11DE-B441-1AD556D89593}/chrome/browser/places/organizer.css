@@ -1,0 +1,405 @@
+/* Toolbar */
+#placesToolbar {
+  padding: 3px;  /* b/f buttons have a 1px image padding */
+  -moz-padding-end: 4px;
+}
+
+/* back & forward buttons */
+#back-button, #forward-button {
+  list-style-image: url(libraryNavigation.png);
+  -moz-appearance: none;
+  padding: 3px;
+  border: none;
+margin-left:5px;
+}
+
+#placesToolbar > toolbarbutton > image,
+#placesToolbar > toolbarbutton > label {
+  margin: 0;
+  padding: 0;
+}
+
+#back-button,
+#forward-button[chromedir="rtl"] {  
+  -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+#back-button:not([disabled="true"]):hover,
+#forward-button:not([disabled="true"]):hover[chromedir="rtl"] {
+  -moz-image-region: rect(24px, 24px, 48px, 0px);
+}
+#back-button[disabled="true"],
+#forward-button[chromedir="rtl"][disabled="true"] {
+  -moz-image-region: rect(48px, 24px, 72px, 0px) !important;
+}
+#back-button:not([disabled="true"]):hover:active,
+#forward-button:not([disabled="true"]):hover:active[chromedir="rtl"] {
+  -moz-image-region: rect(72px, 24px, 96px, 0px);
+}
+
+#forward-button,
+#back-button[chromedir="rtl"] {
+  -moz-image-region: rect(0px, 48px, 24px, 24px);
+}
+#forward-button:not([disabled="true"]):hover,
+#back-button:not([disabled="true"]):hover[chromedir="rtl"] {
+  -moz-image-region: rect(24px, 48px, 48px, 24px);
+}
+#forward-button[disabled="true"],
+#back-button[chromedir="rtl"][disabled="true"] {
+  -moz-image-region: rect(48px, 48px, 72px, 24px) !important;
+}
+#forward-button:not([disabled="true"]):hover:active,
+#back-button:not([disabled="true"]):hover:active[chromedir="rtl"] {
+  -moz-image-region: rect(72px, 48px, 96px, 24px);
+}
+
+/* Menu */
+#placesMenu {
+  -moz-margin-start: 8px;
+  -moz-appearance: none;
+  border: none;
+background-color:transparent;
+}
+
+#placesMenu > menu {
+padding: .35em;
+/*  -moz-appearance: none;
+ border: 4px solid transparent;
+-moz-border-radius: 4px;*/
+color:#000;
+}
+
+/*#placesMenu > menu:hover {
+  padding: 0px;
+-moz-border-top-colors:#D8DADB #87BFDB #D2D8DB transparent;
+-moz-border-bottom-colors:#D6D8D9 #86BEDA #D0D7D9 transparent;
+-moz-border-right-colors:#D1D7DA #87BFDB #D7D9DA transparent;
+-moz-border-left-colors:#D6D9D9 #86BFDA #D0D7D9 transparent;
+-moz-box-shadow:none;
+}
+
+
+#placesMenu > menu:hover:active {
+  padding: 0px;
+-moz-border-top-colors:transparent #6FD3FB #A1C9D8 #D0DCDE;
+-moz-border-bottom-colors:transparent #72D6FD #B1D9E8 #D1DCDE;
+-moz-border-right-colors:transparent #72D6FD #AFD7E7 #D2DCDF;
+-moz-border-left-colors:transparent #72D6FD #AFD7E7 #D2DDDF;
+-moz-box-shadow:none;
+}
+
+#placesMenu > menu[open="true"] {
+-moz-border-top-colors:transparent #9C9896 #C4C0BE #DDDBD9;
+-moz-border-bottom-colors:transparent #D5D1CF #DFDCD9 #DFDCD9;
+-moz-border-right-colors:transparent #BEBBB8 #DCD8D6 #E0DCDA;
+-moz-border-left-colors:transparent #BDBAB7 #DBD8D6 #DFDCD9;
+-moz-box-shadow:none;
+}*/
+
+#placesMenu > menu > label {
+ -moz-padding-end: 0px;
+ -moz-padding-start: 2px;
+}
+
+#placesMenu[chromedir="rtl"] > menu > label {
+  background-position: left center;
+}
+
+/* organize button */
+#organizeButton {
+list-style-image: url("chrome://browser/skin/places/allBookmarks.png");
+background-image:none; 
+background-repeat:no-repeat;
+background-position:bottom right;
+padding-right: 8px !important;
+background-color:transparent;
+}
+
+/* view button */
+#viewMenu {
+  list-style-image: url("chrome://browser/skin/places/view.png");
+background-image:none; 
+background-repeat:no-repeat;
+background-position:bottom right;
+padding-right: 8px !important;
+background-color:transparent;
+}
+
+/* maintenance button */
+#maintenanceButton {
+list-style-image: url("chrome://browser/skin/places/importAndBackup.png");
+background-image:none; 
+background-repeat:no-repeat;
+background-position:bottom right;
+padding-right: 8px !important;
+background-color:transparent;
+}
+
+/* Root View */
+#placesView {
+margin:0px !important;
+border: none;
+}
+
+/* Place List, Place Content */
+.placesTree {
+  margin: 0px;
+}
+
+#contentView {
+margin: 0px;
+}
+
+#placesList {
+-moz-appearance: none;
+margin:10px 5px 10px 10px; 
+padding: 0;
+background-color:#ffffff;
+border:none;
+-moz-box-shadow:inset 0px 1px 1px 0px rgba(0,0,0,.15),
+0px 0px 0px 1px rgba(0,0,0,.2);
+-moz-border-radius:3px;
+}
+
+#placesList:hover {
+-moz-box-shadow:inset 0px 0px 2px 1px rgba(110, 214, 255,.7),
+0px 0px 0px 1px rgba(110, 214, 255,.9);
+-moz-transition-duration: 0.3s; 
+}
+
+#placesList:focus {
+-moz-box-shadow:inset 0px 0px 2px 1px rgba(58, 167, 221,.7),
+0 0 0px 1px rgba(58, 167, 221,.9);
+-moz-transition-duration: 0.3s;
+}
+
+#placeContent {
+  -moz-appearance: none;
+margin:10px; 
+border:none;
+-moz-box-shadow:inset 0px 1px 1px 0px rgba(0,0,0,.15),
+0px 0px 0px 1px rgba(0,0,0,.2);
+-moz-border-radius:3px;
+background-color:#ffffff;
+}
+
+#placeContent:hover {
+-moz-box-shadow:inset 0px 0px 2px 1px rgba(110, 214, 255,.7),
+0px 0px 0px 1px rgba(110, 214, 255,.9);
+-moz-transition-duration: 0.3s; 
+}
+
+
+#placeContent:focus {
+-moz-box-shadow:inset 0px 0px 2px 1px rgba(58, 167, 221,.7),
+0 0 0px 1px rgba(58, 167, 221,.9);
+-moz-transition-duration: 0.3s;
+}
+
+#infoPaneBox {
+margin:10px !important;  
+padding: 5px;
+border:none;
+-moz-box-shadow:inset 0px 1px 1px 0px rgba(0,0,0,.15),
+0px 0px 0px 1px rgba(0,0,0,.2);
+background-color: #DBD7D4;
+-moz-border-radius:3px;
+}
+
+.small, .small[disabled="true"] {
+  min-width: 0px;
+  padding: 0px 4px 0px 4px;
+  margin: 0px;  
+  border: 0px;
+}
+
+.small .button-text,
+.small .button-box {
+  padding: 5px 10px;
+  border: 0px;
+}
+
+
+#infoBoxExpanderLabel {
+  -moz-padding-start: 2px;
+}
+
+#organizerScopeBar {
+ padding: 2px 0;
+  -moz-padding-end: 3px;
+}
+
+#organizerScopeBar > toolbarbutton {
+  -moz-appearance: none;
+
+ border: 3px solid transparent;
+  -moz-border-radius: 4px;
+  padding: 0 !important;
+  margin: 0 1px;
+}
+
+#organizerScopeBar > toolbarbutton:hover {
+  padding: 0px;
+border:4px solid;
+-moz-border-top-colors:#D8DADB #87BFDB #D2D8DB transparent;
+-moz-border-bottom-colors:#D6D8D9 #86BEDA #D0D7D9 transparent;
+-moz-border-right-colors:#D1D7DA #87BFDB #D7D9DA transparent;
+-moz-border-left-colors:#D6D9D9 #86BFDA #D0D7D9 transparent;
+  -moz-border-radius: 4px;
+}
+
+#organizerScopeBar > toolbarbutton:hover:active {
+  padding: 0px;
+border:4px solid;
+-moz-border-top-colors:transparent #6FD3FB #A1C9D8 #D0DCDE;
+-moz-border-bottom-colors:transparent #72D6FD #B1D9E8 #D1DCDE;
+-moz-border-right-colors:transparent #72D6FD #AFD7E7 #D2DCDF;
+-moz-border-left-colors:transparent #72D6FD #AFD7E7 #D2DDDF;
+  -moz-border-radius: 4px;
+}
+
+#organizerScopeBar > toolbarbutton[checked="true"] {
+border:4px solid;
+-moz-border-top-colors:transparent #9C9896 #C4C0BE #DDDBD9;
+-moz-border-bottom-colors:transparent #D5D1CF #DFDCD9 #DFDCD9;
+-moz-border-right-colors:transparent #BEBBB8 #DCD8D6 #E0DCDA;
+-moz-border-left-colors:transparent #BDBAB7 #DBD8D6 #DFDCD9;
+background:none !important;
+  -moz-border-radius: 4px;
+}
+
+#organizerScopeBar > toolbarbutton > label,
+#organizerScopeBar > toolbarbutton > image {
+  padding: 0;
+  margin: 0;
+}
+
+#organizerScopeBar .toolbarbutton-text {
+   margin: 0;
+   padding: 2px 5px;
+}
+
+#organizerScopeBar > toolbarbutton:not([disabled="true"]):not([checked="true"]):hover {
+  border-color: ThreeDShadow;
+}
+
+#organizerScopeBar > toolbarbutton[checked="true"] {
+  border-color: ThreeDDarkShadow !important;
+}
+
+#placesView:-moz-system-metric(windows-default-theme) {
+  border-top: none;
+}
+
+#placesToolbar {
+  -moz-appearance: none;
+border-bottom:none !important;
+  color: #000;
+}
+
+#placesToolbar:-moz-system-metric(windows-default-theme) {
+/*   min-height: 36px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -moz-padding-start: 6px;
+  -moz-padding-end: 8px;
+}
+
+#placesMenu > menu {
+  color: #000;
+
+}
+
+/*#placesMenu:-moz-system-metric(windows-default-theme) > menu > label {
+  -moz-padding-end: 15px;
+  background-color: transparent);
+}*/
+
+#placesView > splitter:-moz-system-metric(windows-default-theme) {
+  border: 0;
+  -moz-border-end: 1px solid;
+  -moz-border-right-colors: #A9B7C9;
+  -moz-border-left-colors: #A9B7C9;
+  min-width: 0;
+  width: 3px !important;
+  background-color: transparent;
+  -moz-margin-start: -3px;
+  position: relative;
+  z-index: 10;
+}
+
+#searchModifiers:-moz-system-metric(windows-default-theme) {
+  border-bottom: 1px solid #A9B7C9;
+}
+
+#organizerScopeBar:-moz-system-metric(windows-default-theme) {
+  -moz-appearance: none;
+  border: none;
+}
+
+#infoPaneBox:-moz-system-metric(windows-default-theme) {
+  border-top-color: #A9B7C9;
+}
+
+#placesView:-moz-system-metric(windows-default-theme),
+#searchModifiers:-moz-system-metric(windows-default-theme),
+#infoPane:-moz-system-metric(windows-default-theme),
+#placesList:-moz-system-metric(windows-default-theme),
+#placeContent:-moz-system-metric(windows-default-theme) {
+  background-color: #EEF3FA;
+}
+
+/**** Vista default theme: Library's search box needs to be vertically centered ****/
+#searchFilter:-moz-system-metric(windows-default-theme) {
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+#placesView:-moz-system-metric(windows-default-theme) {
+  border-top: none;
+}
+
+#placesToolbar {
+  -moz-appearance: -moz-win-media-toolbox;
+  color: #000;
+}
+
+#placesMenu > menu {
+  color: #000;
+}
+
+#placesView > splitter:-moz-system-metric(windows-default-theme) {
+  border: 0;
+  -moz-border-end: 1px solid;
+  -moz-border-right-colors: #A9B7C9;
+  -moz-border-left-colors: #A9B7C9;
+  min-width: 0;
+  width: 3px !important;
+  background-color: transparent;
+  -moz-margin-start: -3px;
+  position: relative;
+  z-index: 10;
+}
+
+#searchModifiers:-moz-system-metric(windows-default-theme) {
+  border-bottom: 1px solid #A9B7C9;
+}
+
+#organizerScopeBar:-moz-system-metric(windows-default-theme) {
+  -moz-appearance: none;
+  border: none;
+}
+
+#infoPaneBox:-moz-system-metric(windows-default-theme) {
+  border-top-color: #A9B7C9;
+}
+
+#placesView:-moz-system-metric(windows-default-theme),
+#searchModifiers:-moz-system-metric(windows-default-theme),
+#infoPane:-moz-system-metric(windows-default-theme),
+#placesList:-moz-system-metric(windows-default-theme),
+#placeContent:-moz-system-metric(windows-default-theme) {
+background-color:#E1DFDE;
+}
+
+

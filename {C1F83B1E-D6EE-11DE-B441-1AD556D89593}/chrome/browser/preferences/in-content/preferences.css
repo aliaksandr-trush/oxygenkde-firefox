@@ -1,0 +1,207 @@
+/* - This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this file,
+   - You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("chrome://global/skin/inContentUI.css");
+
+@namespace html "http://www.w3.org/1999/xhtml";
+
+#preferences-home {
+ 
+-moz-box-pack: center !important;
+}
+
+/*
+#mainPrefPane  {
+
+  background-color: #d9dde1;
+}
+*/
+
+#mainPrefPane {
+background-color:transparent;
+background-image: url("chrome://browser/skin/preferences/in-content/preferences-system.png");
+background-position:bottom right;
+background-repeat:no-repeat;
+
+}
+
+#header {
+  margin-bottom: 18px;
+}
+
+.landingButton {
+  -moz-box-align: center;
+  -moz-box-orient: vertical;
+}
+
+.landingButton:hover {
+  cursor: pointer;
+}
+
+.landingButton-label {
+  margin-top: 4px;
+}
+
+.landingButton-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("chrome://browser/skin/preferences/Options.png");
+  background-repeat: no-repeat;
+}
+
+.preference-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("chrome://browser/skin/preferences/Options.png");
+  background-repeat: no-repeat;
+  margin: 0 20px;
+}
+
+.preference-icon[type="general"],
+.landingButton-icon[type="general"] {
+  background-position: 0 0;
+}
+
+.preference-icon[type="tabs"],
+.landingButton-icon[type="tabs"] {
+  background-position: -32px 0;
+}
+
+.preference-icon[type="content"],
+.landingButton-icon[type="content"] {
+  background-position: -64px 0;
+}
+
+.preference-icon[type="applications"],
+.landingButton-icon[type="applications"] {
+  background-position: -96px 0;
+}
+
+.preference-icon[type="privacy"],
+.landingButton-icon[type="privacy"] {
+  background-position: -128px 0;
+}
+
+.preference-icon[type="security"],
+.landingButton-icon[type="security"] {
+  background-position: -160px 0;
+}
+
+.preference-icon[type="advanced"],
+.landingButton-icon[type="advanced"] {
+  background-position: -192px 0;
+}
+
+.preference-icon[type="sync"],
+.landingButton-icon[type="sync"] {
+  background-image: url("chrome://browser/skin/preferences/Options-sync.png");
+}
+
+caption {
+  font-size: 20px;
+}
+
+.heading {
+  height: 50px;
+border-style:solid;
+border-color:transparent;  
+-moz-border-image: url("chrome://oxygenkdeoptions/skin/speed_air/bg4.png") 22 22 22 22  stretch stretch;
+border-image: url("chrome://oxygenkdeoptions/skin/speed_air/bg4.png") 22 22 22 22 fill stretch stretch;
+border-width: 12px;
+  margin-bottom: 15px;
+  -moz-box-align: center;
+}
+
+prefpane > .content-box {
+  overflow: auto;
+padding:15px;
+}
+
+/* Applications Pane Styles */
+
+#applications-content {
+  padding: 15px;
+}
+
+#handlersView {
+  -moz-appearance: none;
+  border: 1px solid ThreeDShadow;
+  overflow-y: auto;
+}
+
+/* XXX This style is for bug 740213 and should be removed once that
+   bug has a solution. */
+description > html|a {
+  cursor: pointer;
+}
+
+/* XXX Styles Below can be removed once bug 660726 lands */
+.nav-button {
+  min-width: 0;
+}
+
+#back-btn,#forward-btn  {
+padding:4px;
+}
+
+#back-btn:-moz-locale-dir(ltr) {
+list-style-image: url("chrome://browser/skin/icons/24/go-previous.png");
+}
+
+#forward-btn:-moz-locale-dir(ltr) {
+list-style-image: url("chrome://browser/skin/icons/24/go-next.png");
+}
+
+#back-btn:-moz-locale-dir(rtl) {
+list-style-image: url("chrome://browser/skin/icons/24/go-previous.png");
+}
+
+#forward-btn:-moz-locale-dir(rtl) {
+list-style-image: url("chrome://browser/skin/icons/16/go-next.png");
+}
+
+#back-btn[disabled="true"]:-moz-locale-dir(ltr) {
+list-style-image: url("chrome://browser/skin/icons/disabled/24/go-previous.png");
+}
+
+#forward-btn[disabled="true"]:-moz-locale-dir(ltr) {
+list-style-image: url("chrome://browser/skin/icons/disabled/24/go-next.png");
+}
+
+#back-btn[disabled="true"]:-moz-locale-dir(rtl) {
+list-style-image: url("chrome://browser/skin/icons/disabled/24/go-previous.png");
+}
+
+#forward-btn[disabled="true"]:-moz-locale-dir(rtl) {
+list-style-image: url("chrome://browser/skin/icons/disabled/24/go-next.png");
+}
+
+.header-button .toolbarbutton-text {
+  display: none;
+}
+
+#preferences-home button {
+padding:20px !important;
+}
+
+
+#mainPrefPane .groupbox-body {
+background-image:none !important;
+box-shadow:none !important;
+border:none !important;
+border-style:solid !important;  
+border-color:transparent !important;  
+-moz-border-image: url("chrome://browser/skin/subskins/bg2.png") 12 12 12 12  stretch stretch !important;
+border-image: url("chrome://browser/skin/subskins/bg2.png") 12 12 12 12  fill stretch stretch !important;
+border-width: 5px !important;
+padding:8px 4px 8px 8px  !important;
+margin-top:5px !important;
+}
+
+#mainPrefPane tab{
+margin :5px 7px !important;
+}
+

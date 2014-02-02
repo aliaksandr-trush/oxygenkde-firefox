@@ -1,0 +1,311 @@
+#context-openlink,menuitem[key="key_newNavigator"],#menu_openFile,#appmenu_openFile,
+#context-copyimage,#menuitem_openReferrer,menuitem[command="Browser:OpenLocation"],menuitem[oncommand="historyCopyLink();"],#context-sendlink,#context-sendpage,#menu_sendLink,#context-copylink,#miCopyLink,
+#context-copyimage-contents,#miOpen, #menuitem_copyLocation,menuitem[oncommand="openURLIn('current');"],
+#context-viewimage,#context-viewbgimage,#context-sendimage,#menu_HelpPopup,
+#context-metadata, #menu_properties,menuitem[command="cmd_bm_properties"],menuitem[command="placesCmd_show:info"],#quicknote-options, #menu_preferences,menuitem[oncommand="openPreferences();"],
+#context-setWallpaper, #context-setDesktopBackground,
+#menu_HelpPopup_reportertoolmenu,#menu_HelpPopup_reportPhishingtoolmenu,#context-blockimage,
+#context-openlinkintab,menuitem[key="key_newNavigatorTab"],
+#cmd_close, #menu_closeWindow, #tm-undoCloseList, menuitem[command="cmd_close"], menuitem[command="cmd_closeWindow"],menuitem[oncommand="BrowserCloseTabOrWindow()"],menuitem[oncommand="BrowserTryToCloseWindow()"],menuitem[oncommand="inspector.exit();"],menuitem[oncommand="viewer.cmdDeleteSelectedProperty()"],
+#printSetupMenuItem,menuitem[name="charsetCustomize"],menuitem[command="cmd_pageSetup"], menuitem[command="cmd_pagesetup"], menuitem[oncommand="PrintUtils.showPageSetup();"],
+menuitem[command="cmd_print"],#menu_FileQuitItem, #tm-closeAllTabs, #tm-content-closetab, menuitem[key="placesKey_close"],menuitem[oncommand="window.extensions.mook.minimizetotray.trayTurboClose();"],
+menuitem[command="cmd_enable"],#tools_appenable, menuitem[command="cmd_useTheme"],#menuitem_appenable_clone,
+#messagePaneContext-printpreview, #printPreviewMenuItem,menuitem[command="cmd_printPreview"], menuitem[command="cmd_printpreview"],menuitem[oncommand="PrintUtils.printPreview(onEnterPrintPreview, onExitPrintPreview);"],
+#context-undo, #menu_undo, #tm-content-undoCloseTab, #tm-undoCloseTab, #tm_undocloseContextMenu,#mnEditUndo,#historyUndoMenu,menuitem[command="cmd_undo"],menuitem[cmd="cmd_undo"],
+#context-redo, #cmd_redo, #menu_redo,#mnEditRedo,menuitem[command="cmd_redo"],menuitem[cmd="cmd_redo"],
+#context-cut, #menu_cut, #cmd_cut, #mnEditCut,menuitem[command="cmd_cut"], menuitem[cmd="cmd_cut"],
+#context-copy, #menu_copy, #context-copyemail, #cmd_copy, #cls-context,#mnEditCopy,menuitem[command="cmd_copy"], menuitem[cmd="cmd_copy"],menuitem[oncommand="viewer.cmdCopyValue()"],
+#context-paste, #cmd_paste, #menu_paste, #mnEditPaste,menuitem[command="cmd_paste"] , menuitem[cmd="cmd_paste"],
+#context-delete, #cmd_delete, #menu_delete, #mnEditDelete,menuitem[command="cmd_delete"], menuitem[cmd="cmd_delete"],
+#context-selectall,#cmd_selectAll, #menu_selectAll, #menuitem_selectAll,menuitem[command="cmd_selectAll"],menuitem[cmd="cmd_selectAll"],
+#context-searchselect, #context-keywordfield, #searchMailCmd, #searchAddressesCmd, menuitem[command="Tools:Search"], menuitem[command="cmd_find"], menuitem[oncommand="goDoCommand('cmd_find')"],menuitem[oncommand="inspector.getViewer('dom').showFindDialog()"],
+menuitem[command="cmd_findAgain"],menuitem[oncommand="goDoCommand('cmd_findAgain')"],
+#quicknote-options, #menu_preferences,menuitem[oncommand="openPreferences();"],
+#viewToolbarsMenu,#RepairExtensions,#viewSidebarMenuMenu, #menu_MessagePaneLayout,
+#context-stop,menuitem[key="key_stop"],#context-stop[disabled="true"],menuitem[key="key_stop"][disabled="true"],
+#context-reload, #tm-reloadLeft, #tm-reloadRight, #tm-reloadOther, #menu_reload, menuitem[command="Browser:Reload"], menuitem[command="cmd_reload"],menuitem[command="placesCmd_reload"],menuitem[command="cmd_bm_refreshlivemark"],menuitem[oncommand="gContextMenu.reloadFrame();"],menuitem[oncommand="BrowserReload();"],
+#menu_textReduce,#zoom-out,menuitem[key="key_fullZoomReduce"],
+#menu_textEnlarge,#zoom-in,menuitem[key="key_fullZoomEnlarge"],
+#menu_textReset,menuitem[key="key_fullZoomReset"],
+menuitem[oncommand="izShowCustomZoom();"],menuitem[oncommand="izShowCustomDim();"],menuitem[oncommand="izImageFit();"],#zoommain-custom, #viewFullZoomMenu,
+#rightencoding-frame,#charsetMenu, #mailviewCharsetMenu,menu[oncommand="MultiplexHandler(event)"],
+#pageStyleMenu,#context-viewpartialsource-selection, #context-viewpartialsource-mathml, #context-viewsource,menuitem[oncommand="gContextMenu.viewFrameSource();"], menuitem[command="View:PageSource"],
+menuitem[command="View:FullScreen"], #fullScreenItem,
+#context-back, menuitem[key="goBackKb"],
+menuitem[key="goBackKb"][disabled],#context-back[disabled],
+menuitem[key="goBackKb"][chromedir="rtl"],#context-back[chromedir="rtl"],
+menuitem[key="goBackKb"][disabled][chromedir="rtl"],#context-back[disabled][chromedir="rtl"],
+menuitem[key="goForwardKb"],#context-forward,
+menuitem[key="goForwardKb"][disabled],#context-forward[disabled],
+menuitem[key="goForwardKb"][chromedir="rtl"],#context-forward[chromedir="rtl"],
+menuitem[key="goForwardKb"][disabled][chromedir="rtl"],#context-forward[disabled][chromedir="rtl"],
+#context-home, #historyMenuHome,menuitem[command="Browser:Home"],
+#tm-linkWithhistory,#tm-autoreload_menu,menuitem[command="Browser:ShowAllHistory"],menuitem[oncommand="toggleSidebar('viewHistorySidebar');"],
+#context-bookmarklink, #context-bookmarkpage,#miAddBookmark, #newbookmark,menuitem[command="placesCmd_new:bookmark"],
+menuitem[command="Browser:AddBookmarkAs"],menuitem[command="cmd_bm_newbookmark"], 
+menuitem[oncommand="addBookmarkAs(document.getElementById('content'), false);"], 
+menuitem[oncommand="gContextMenu.addBookmarkForFrame();"], menuitem[oncommand="toggleSidebar('viewBookmarksSidebar');"], 
+menuitem[oncommand="abhere.addBookmark(event)"],menuitem[oncommand="historyAddBookmarks();"],
+#subscribeToPageMenuitem, #subscribeToPageMenupopup,
+menuitem[oncommand="toOpenWindowByType('bookmarks:manager', 'chrome://browser/content/bookmarks/bookmarksManager.xul');"],#bookmarksShowAll,
+#bookmarks-menuitem-sort,menuitem[oncommand="sortBookmarksService.sort()"],
+menuitem[tabid="tab-item-bookmarkGroup"],menuitem[command="Browser:BookmarkAllTabs"],
+menuitem[command="Tools:Addons"],#appmenu_addons,
+#menuitem_jsconsoleoutput, #javascriptConsole, #javaScriptConsole,menuitem[oncommand="toggleSidebar('viewConsole2Sidebar');"],
+menuitem[oncommand="toErrorConsole();"],menuitem[oncommand="toJavaScriptConsole();"],
+#context-viewinfo, menuitem[command="View:PageInfo"], menuitem[oncommand="gContextMenu.viewFrameInfo();"],#releaseNotes,menuitem[oncommand="openReleaseNotes(event)"],
+#hintsAndTips, #menu_openHelp, menuitem[oncommand="openHelp('firefox-help');"],
+menuitem[oncommand="openHelp('firefox-help', 'chrome://browser/locale/help/help.rdf');"],
+#sanitizeItem {
+list-style-image: url("chrome://browser/skin/kdemenus.png") !important; }
+
+/**************************/
+/*   FILE  Menu                 */
+/**************************/
+#menu_openFile,#appmenu_openFile {
+-moz-image-region: rect(0px 16px 16px 0px)  !important;}
+#context-openlink,menuitem[key="key_newNavigator"] {
+-moz-image-region: rect(0px 32px 16px 16px) !important;}
+#context-copyimage,#menuitem_openReferrer,menuitem[command="Browser:OpenLocation"],menuitem[oncommand="historyCopyLink();"],#context-sendlink,#context-sendpage,#menu_sendLink {
+-moz-image-region: rect(0px 48px 16px 32px) !important;}
+#context-copylink,#miCopyLink {
+-moz-image-region: rect(32px 16px 48px 0px) !important;}
+#context-copyimage-contents,#miOpen, #menuitem_copyLocation,menuitem[oncommand="openURLIn('current');"]  {
+-moz-image-region: rect(32px 16px 48px 0px) !important;}
+#context-viewimage,#context-viewbgimage{
+-moz-image-region: rect(0px 64px 16px 48px) !important;}
+#context-sendimage {
+-moz-image-region: rect(0px 80px 16px 64px) !important;}
+#menu_HelpPopup {
+-moz-image-region: rect(0px 96px 16px 80px) !important;}
+#context-metadata, #menu_properties,menuitem[command="cmd_bm_properties"],menuitem[command="placesCmd_show:info"],#quicknote-options, #menu_preferences,menuitem[oncommand="openPreferences();"] {
+-moz-image-region: rect(0px 112px 16px 96px) !important;}
+#context-setWallpaper, #context-setDesktopBackground {
+-moz-image-region: rect(0px 128px 16px 112px) !important;}
+#menu_HelpPopup_reportertoolmenu,#menu_HelpPopup_reportPhishingtoolmenu,#context-blockimage {
+-moz-image-region: rect(0px 144px 16px 128px) !important;}
+#context-openlinkintab,menuitem[key="key_newNavigatorTab"]{
+-moz-image-region: rect(0px 160px 16px 144px) !important;}
+#cmd_close, #menu_closeWindow, #tm-undoCloseList, menuitem[command="cmd_close"], menuitem[command="cmd_closeWindow"],menuitem[oncommand="BrowserCloseTabOrWindow()"],menuitem[oncommand="BrowserTryToCloseWindow()"],menuitem[oncommand="inspector.exit();"],menuitem[oncommand="viewer.cmdDeleteSelectedProperty()"] {
+-moz-image-region: rect(16px 16px 32px 0px) !important;}
+#context-saveimage, #context-savepage,#openselectedlinks_savepage_menuitem, #context-savelink, #menu_saveFrame, #menu_saveframe, #openselectedlinks_download_menuitem,#mi-save,menuitem[command="Browser:SavePage"],menuitem[command="cmd_bm_export"], menuitem[command="cmd_savePage"], menuitem[oncommand="MsgSaveAsFile();"], menuitem[oncommand="saveDocument(gContextMenu.target.ownerDocument);"] {
+list-style-image: url("chrome://browser/skin/icons/save-as.png") !important;
+-moz-image-region:auto;}
+#printSetupMenuItem,menuitem[name="charsetCustomize"],menuitem[command="cmd_pageSetup"], menuitem[command="cmd_pagesetup"], menuitem[oncommand="PrintUtils.showPageSetup();"] {
+-moz-image-region: rect(16px 48px 32px 32px) !important;}
+menuitem[command="cmd_bm_import"],menuitem[oncommand="toImport();"],menuitem[oncommand="BrowserImport();"] {
+list-style-image: url("chrome://browser/skin/icons/16/document-import.png") !important;}
+menuitem[command="cmd_print"] { 
+-moz-image-region: rect(16px 64px 32px 48px) !important;}
+#menu_FileQuitItem, #tm-closeAllTabs, #tm-content-closetab, menuitem[key="placesKey_close"],menuitem[oncommand="window.extensions.mook.minimizetotray.trayTurboClose();"] {
+-moz-image-region: rect(16px 80px 32px 64px) !important;}
+menuitem[command="cmd_enable"],#tools_appenable, menuitem[command="cmd_useTheme"],#menuitem_appenable_clone  {
+-moz-image-region: rect(16px 96px 32px 80px) !important;}
+#messagePaneContext-printpreview, #printPreviewMenuItem,menuitem[command="cmd_printPreview"], menuitem[command="cmd_printpreview"],menuitem[oncommand="PrintUtils.printPreview(onEnterPrintPreview, onExitPrintPreview);"] {
+-moz-image-region: rect(16px 112px 32px 96px) !important;}
+
+/**************************/
+/*   EDIT  Menu                */
+/**************************/
+
+#context-undo, #menu_undo, #tm-content-undoCloseTab, #tm-undoCloseTab, #tm_undocloseContextMenu,#mnEditUndo,#historyUndoMenu,menuitem[command="cmd_undo"],menuitem[cmd="cmd_undo"] {
+-moz-image-region: rect(16px 128px 32px 112px) !important;}
+#context-redo, #cmd_redo, #menu_redo,#mnEditRedo,menuitem[command="cmd_redo"],menuitem[cmd="cmd_redo"] {
+-moz-image-region: rect(16px 144px 32px 128px) !important;}
+#context-cut, #menu_cut, #cmd_cut, #mnEditCut,menuitem[command="cmd_cut"], menuitem[cmd="cmd_cut"] {
+-moz-image-region: rect(16px 160px 32px 144px) !important;}
+#context-copy, #menu_copy, #context-copyemail, #cmd_copy, #cls-context,#mnEditCopy,menuitem[command="cmd_copy"], menuitem[cmd="cmd_copy"],menuitem[oncommand="viewer.cmdCopyValue()"] {
+-moz-image-region: rect(32px 16px 48px 0px) !important;}
+#context-paste, #cmd_paste, #menu_paste, #mnEditPaste,menuitem[command="cmd_paste"] , menuitem[cmd="cmd_paste"] {
+-moz-image-region: rect(32px 32px 48px 16px) !important;}
+menuitem[anonid="paste-and-go"] {
+list-style-image: url("chrome://browser/skin/icons/16/go.png") !important;  }
+#context-delete, #cmd_delete, #menu_delete, #mnEditDelete,menuitem[command="cmd_delete"], menuitem[cmd="cmd_delete"] {
+-moz-image-region: rect(32px 48px 48px 32px) !important;}
+#context-selectall,#cmd_selectAll, #menu_selectAll, #menuitem_selectAll,menuitem[command="cmd_selectAll"],menuitem[cmd="cmd_selectAll"] {
+-moz-image-region: rect(32px 64px 48px 48px) !important;}
+#context-searchselect, #context-keywordfield, #searchMailCmd, #searchAddressesCmd, menuitem[command="Tools:Search"], menuitem[command="cmd_find"], menuitem[oncommand="goDoCommand('cmd_find')"],menuitem[oncommand="inspector.getViewer('dom').showFindDialog()"] {
+-moz-image-region: rect(32px 80px 48px 64px) !important;}
+menuitem[command="cmd_findAgain"],menuitem[oncommand="goDoCommand('cmd_findAgain')"] {
+-moz-image-region: rect(32px 96px 48px 80px) !important;}
+#quicknote-options, #menu_preferences,menuitem[oncommand="openPreferences();"] {
+-moz-image-region: rect(32px 112px 48px 96px) !important;}
+
+/**************************/
+/*   VIEW  Menu                */
+/**************************/
+
+#viewToolbarsMenu,#RepairExtensions {
+-moz-image-region: rect(32px 128px 48px 112px) !important;}
+#viewSidebarMenuMenu, #menu_MessagePaneLayout {
+-moz-image-region: rect(32px 144px 48px 128px) !important;}
+#context-stop,menuitem[key="key_stop"]{
+-moz-image-region: rect(32px 160px 48px 144px) !important;}
+#context-stop[disabled="true"],menuitem[key="key_stop"][disabled="true"]{
+-moz-image-region: rect(48px 16px 64px 0px) !important;}
+#context-reload, #tm-reloadLeft, #tm-reloadRight, #tm-reloadOther, #menu_reload, menuitem[command="Browser:Reload"], menuitem[command="cmd_reload"],menuitem[command="placesCmd_reload"],menuitem[command="cmd_bm_refreshlivemark"],menuitem[oncommand="gContextMenu.reloadFrame();"],menuitem[oncommand="BrowserReload();"] {
+-moz-image-region: rect(48px 32px 64px 16px) !important;}
+#menu_textReduce,#zoom-out,menuitem[key="key_fullZoomReduce"]{
+-moz-image-region: rect(48px 48px 64px 32px) !important;}
+#menu_textEnlarge,#zoom-in,menuitem[key="key_fullZoomEnlarge"]{
+-moz-image-region: rect(48px 64px 64px 48px) !important;}
+#menu_textReset,menuitem[key="key_fullZoomReset"] {
+-moz-image-region: rect(48px 80px 64px 64px) !important;}
+menuitem[oncommand="izShowCustomZoom();"],menuitem[oncommand="izShowCustomDim();"],menuitem[oncommand="izImageFit();"],#zoommain-custom, #viewFullZoomMenu  {
+-moz-image-region: rect(48px 96px 64px 80px) !important;}
+#rightencoding-frame,#charsetMenu, #mailviewCharsetMenu,menu[oncommand="MultiplexHandler(event)"]  {
+-moz-image-region: rect(48px 112px 64px 96px) !important;}
+#pageStyleMenu {
+-moz-image-region: rect(48px 128px 64px 112px) !important;}
+#context-viewpartialsource-selection, #context-viewpartialsource-mathml, #context-viewsource,menuitem[oncommand="gContextMenu.viewFrameSource();"], menuitem[command="View:PageSource"] {
+-moz-image-region: rect(48px 144px 64px 128px) !important;}
+menuitem[command="View:FullScreen"], #fullScreenItem {
+-moz-image-region: rect(48px 160px 64px 144px) !important;}
+
+/**************************/
+/*   CRONOLOGIA  Menu   */
+/**************************/
+
+#context-back, menuitem[key="goBackKb"],
+menuitem[key="goBackKb"][disabled],#context-back[disabled],
+menuitem[key="goBackKb"][chromedir="rtl"],#context-back[chromedir="rtl"],
+menuitem[key="goBackKb"][disabled][chromedir="rtl"],#context-back[disabled][chromedir="rtl"] {
+-moz-image-region: rect(64px 16px 80px 0px) !important;}
+menuitem[key="goForwardKb"],#context-forward,
+menuitem[key="goForwardKb"][disabled],#context-forward[disabled],
+menuitem[key="goForwardKb"][chromedir="rtl"],#context-forward[chromedir="rtl"],
+menuitem[key="goForwardKb"][disabled][chromedir="rtl"],#context-forward[disabled][chromedir="rtl"] {
+-moz-image-region: rect(64px 32px 80px 16px) !important;}
+#context-home, #historyMenuHome,menuitem[command="Browser:Home"] {
+-moz-image-region: rect(64px 48px 80px 32px) !important;}
+#tm-linkWithhistory,#tm-autoreload_menu,menuitem[command="Browser:ShowAllHistory"],menuitem[oncommand="toggleSidebar('viewHistorySidebar');"]{
+-moz-image-region: rect(64px 64px 80px 48px) !important;}
+
+/******************************/
+/*   BOOKMARKS  Menu          */
+/******************************/
+
+#context-bookmarklink, #context-bookmarkpage,#miAddBookmark, #newbookmark,menuitem[command="placesCmd_new:bookmark"],
+menuitem[command="Browser:AddBookmarkAs"],menuitem[command="cmd_bm_newbookmark"], 
+menuitem[oncommand="addBookmarkAs(document.getElementById('content'), false);"], 
+menuitem[oncommand="gContextMenu.addBookmarkForFrame();"], menuitem[oncommand="toggleSidebar('viewBookmarksSidebar');"], 
+menuitem[oncommand="abhere.addBookmark(event)"],menuitem[oncommand="historyAddBookmarks();"] {
+-moz-image-region: rect(64px 80px 80px 64px) !important;}
+#subscribeToPageMenuitem, #subscribeToPageMenupopup {
+-moz-image-region: rect(64px 96px 80px 80px) !important;}
+menuitem[oncommand="toOpenWindowByType('bookmarks:manager', 'chrome://browser/content/bookmarks/bookmarksManager.xul');"],#bookmarksShowAll {
+-moz-image-region: rect(64px 112px 80px 96px) !important;}
+#bookmarks-menuitem-sort,menuitem[oncommand="sortBookmarksService.sort()"],
+menuitem[tabid="tab-item-bookmarkGroup"],menuitem[command="Browser:BookmarkAllTabs"] {
+-moz-image-region: rect(64px 128px 80px 112px) !important;}
+
+/******************************/
+/*   TOOLS  Menu                   */
+/******************************/
+
+menuitem[command="Tools:Addons"],#appmenu_addons {
+-moz-image-region: rect(64px 144px 80px 128px) !important;}
+#menuitem_jsconsoleoutput, #javascriptConsole, #javaScriptConsole,menuitem[oncommand="toggleSidebar('viewConsole2Sidebar');"],
+menuitem[oncommand="toErrorConsole();"],menuitem[oncommand="toJavaScriptConsole();"] {
+-moz-image-region: rect(64px 160px 80px 144px) !important;}
+#context-viewinfo, menuitem[command="View:PageInfo"], menuitem[oncommand="gContextMenu.viewFrameInfo();"],#releaseNotes,menuitem[oncommand="openReleaseNotes(event)"] {
+-moz-image-region: rect(80px 16px 96px 0px) !important;}
+#sanitizeItem {
+-moz-image-region: rect(80px 48px 96px 32px) !important;}
+menuitem[command="Tools:Downloads"] {
+list-style-image: url("chrome://browser/skin/icons/16/kget.png") !important;
+}
+menuitem[id="menu_inspector"] {
+list-style-image: url("chrome://browser/skin/icons/16/inspect.png") !important;
+}
+
+/******************************/
+/*   HELP  Menu             	    */
+/******************************/
+
+#hintsAndTips, #menu_openHelp, menuitem[oncommand="openHelp('firefox-help');"],
+menuitem[oncommand="openHelp('firefox-help', 'chrome://browser/locale/help/help.rdf');"] {
+-moz-image-region: rect(80px 32px 96px 16px) !important;}
+#aboutName {
+list-style-image: url("chrome://branding/content/icon16.png") !important;
+-moz-image-region: auto;}
+#troubleShooting {
+list-style-image: url("chrome://browser/skin/icons/16/bug.png") !important;
+-moz-image-region: auto !important;}
+
+/******************************/
+/*   HELP  Menu  END        	    */
+/******************************/
+
+
+ menuitem[command="cmd_CustomizeToolbars"] {
+list-style-image: url("chrome://browser/skin/icons/16/configure-toolbars.png") !important;
+-moz-image-region: auto;}
+
+
+/* Places Context Menu and Library Menu*/
+
+menuitem[id="placesContext_open"],menuitem[id="placesContext_open:newwindow"],
+menuitem[id="placesContext_open:newtab"],menuitem[id="placesContext_new:bookmark"],menuitem[id="placesContext_createBookmark"],
+menuitem[id="placesContext_cut"],menuitem[id="placesContext_copy"],menuitem[id="placesContext_paste"],
+menuitem[id="placesContext_delete"],menuitem[id="placesContext_deleteHost"],menuitem[id="placesContext_show:info"],
+menuitem[id="placesContext_reload"],menuitem[id="placesContext_reloadMicrosummary"],
+#newbookmark,#orgCut,#orgCopy,#orgPaste,#orgDelete {
+list-style-image: url("chrome://browser/skin/kdemenus.png") !important; }
+ 
+menuitem[id="placesContext_open"] {-moz-image-region: rect(64px 112px 80px 96px) !important;}  
+menuitem[id="placesContext_open:newwindow"] {-moz-image-region: rect(0px 32px 16px 16px) !important; }
+menuitem[id="placesContext_open:newtab"] {-moz-image-region: rect(0px 160px 16px 144px) !important;}
+menuitem[id="placesContext_new:bookmark"],menuitem[id="placesContext_createBookmark"],#newbookmark {  -moz-image-region: rect(64px 80px 80px 64px) !important;  }
+menuitem[id="placesContext_cut"],#orgCut {-moz-image-region: rect(16px 160px 32px 144px) !important;}
+menuitem[id="placesContext_copy"],#orgCopy {-moz-image-region: rect(32px 16px 48px 0px) !important;}
+menuitem[id="placesContext_paste"],#orgPaste {-moz-image-region: rect(32px 32px 48px 16px) !important;}
+menuitem[id="placesContext_delete"],menuitem[id="placesContext_deleteHost"],#orgDelete {-moz-image-region: rect(32px 48px 48px 32px) !important;}
+menuitem[id="placesContext_show:info"] {-moz-image-region: rect(0px 112px 16px 96px) !important;}
+menuitem[id="placesContext_reload"],menuitem[id="placesContext_reloadMicrosummary"]  {-moz-image-region: rect(48px 32px 64px 16px) !important;}
+menuitem[id="placesContext_new:folder"],#newfolder {list-style-image: url("chrome://browser/skin/icons/16/bookmark_folder.png") !important;}
+menuitem[id="placesContext_new:separator"],#newseparator {list-style-image: url("chrome://browser/skin/icons/16/insert-horizontal-rule.png") !important;}
+menuitem[id="placesContext_sortBy:name"] {list-style-image: url("chrome://browser/skin/icons/16/view-sort-ascending.png") !important;}
+menuitem[id="placesContext_openLinks:tabs"],menuitem[id="placesContext_openContainer:tabs"] {list-style-image: url("chrome://browser/skin/icons/16/bookmark-new-list.png") !important;}
+menuitem[id="placesContext_delete_history"]{ list-style-image: url("chrome://browser/skin/icons/16/edit-clear.png") !important;}
+#orgUndo,#orgRedo,#orgSelectAll,#orgClose,#orgClose,#fileRestoreMenu,#restoreFromFile 
+{list-style-image: url("chrome://browser/skin/kdemenus.png") !important;}
+#orgUndo {-moz-image-region: rect(16px 128px 32px 112px) !important;}
+#orgRedo {-moz-image-region: rect(16px 144px 32px 128px) !important;}
+#orgSelectAll {-moz-image-region: rect(32px 64px 48px 48px) !important;}
+#orgClose {-moz-image-region: rect(16px 16px 32px 0px) !important;}
+#orgMoveBookmarks {list-style-image: url("chrome://browser/skin/icons/16/move.png") !important;}
+#viewColumns {list-style-image: url("chrome://browser/skin/icons/16/view-file-columns.png") !important;}
+#viewSort {list-style-image: url("chrome://browser/skin/icons/16/view-sort-ascending.png") !important;}
+#backupBookmarks {list-style-image: url("chrome://browser/skin/icons/save-as.png") !important;}
+#fileRestoreMenu {-moz-image-region: rect(16px 128px 32px 112px) !important;}
+#fileImport {list-style-image: url("chrome://browser/skin/icons/16/document-import.png") !important;}
+#fileExport {list-style-image: url("chrome://browser/skin/icons/16/document-export.png") !important;}
+#restoreFromFile {-moz-image-region: rect(0px 16px 16px 0px) !important;}
+
+menuitem[anonid="paste-and-search"] {
+list-style-image: url("chrome://global/skin/icons/searchbar.png");
+-moz-image-region: rect(0, 16px, 16px, 0) !important;}
+
+#oxygenkde_hidetitlebar {
+  list-style-image: url("chrome://browser/skin/kdemenus.png") !important;
+  -moz-image-region: rect(80px 32px 96px 16px) !important;
+}
+
+#appmenu_about  { list-style-image: url("chrome://branding/content/icon16.png") !important; }
+
+#context_closeOtherTabs {list-style-image: url("chrome://browser/skin/icons/16/tab-close-other.png") !important;}
+#context_closeOtherTabs[disabled] {list-style-image: url("chrome://browser/skin/icons/16/tab-close-other_dis.png") !important;}
+#context_undoCloseTab {list-style-image: url("chrome://browser/skin/icons/16/edit-undo.png") !important;}
+#context_closeTab {list-style-image: url("chrome://browser/skin/icons/16/tab-close.png") !important;}
+#context_newTab  {list-style-image: url("chrome://browser/skin/icons/16/tab-new.png") !important;}
+#context_reloadTab {list-style-image: url("chrome://browser/skin/icons/16/reload.png") !important;}
+#context_reloadAllTabs  {list-style-image: url("chrome://browser/skin/icons/16/reload_all.png") !important;}
+
+
+#context_openTabInWindow,#context_bookmarkTab  {
+list-style-image: url("chrome://browser/skin/kdemenus.png") !important; }
+
+#context_openTabInWindow {-moz-image-region: rect(0px 32px 16px 16px) !important; }
+#context_bookmarkTab {-moz-image-region: rect(64px 80px 80px 64px) !important;  }
+

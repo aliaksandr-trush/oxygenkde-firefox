@@ -1,0 +1,13 @@
+toolbarbutton[type="menu"] {
+background-image:none !important;
+padding-right:2px !important;
+}
+
+toolbarbutton[type="menu"] dropmarker {
+display:none !important;
+}
+
+toolbarbutton.bookmark-item[container]  {
+background-image:none !important;
+padding-right:2px !important;
+}

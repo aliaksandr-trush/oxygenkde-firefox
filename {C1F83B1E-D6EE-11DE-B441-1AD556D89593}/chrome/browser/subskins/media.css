@@ -1,0 +1,18 @@
+.playButton {
+background: url(chrome://global/skin/media/pauseButton.png) no-repeat center !important;
+}
+.playButton[paused] {
+  background: url(chrome://global/skin/media/playButton.png) no-repeat center !important;
+}
+.fullscreenButton {
+  background: -moz-image-rect(url(chrome://global/skin/media/fullscreenButton.png), 0, 16, 16, 0) no-repeat center !important;
+}
+.fullscreenButton[fullscreened] {
+  background-image: -moz-image-rect(url(chrome://global/skin/media/fullscreenButton.png), 0, 32, 16, 16) !important;
+}
+.muteButton {
+  background: url(chrome://global/skin/media/muteButton.png) no-repeat center !important;
+}
+.muteButton[muted] {
+  background: url(chrome://global/skin/media/unmuteButton.png) no-repeat center !important;
+}
